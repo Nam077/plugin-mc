@@ -1,0 +1,767 @@
+economy:
+  error:
+    nomoney: '&cXin lỗi, ngân hàng quốc gia đã hết tiền!'
+limitedItem:
+  error:
+    levelup: '&cBạn cần nâng cấp trong [jobname] để sử dụng vật phẩm này!'
+general:
+  info:
+    toplineseparator: '&7*********************** &6%playerdisplayname% &7***********************'
+    separator: '&7*******************************************************'
+    paymentType:
+      MONEY: Tiền
+      EXP: Kinh nghiệm
+      POINTS: Điểm
+    paymentTypeValued:
+      MONEY: '&2Tiền: %amount%'
+      EXP: '&eKinh nghiệm: %amount%'
+      POINTS: '&6Điểm: %amount%'
+    invalidPage: '&cTrang không hợp lệ'
+    blocks:
+      furnace: Lò nung
+      smoker: Lò hun khói
+      blastfurnace: Lò cao
+      brewingstand: Giá pha chế
+    join: '&eNhấp để gia nhập nghề'
+    leave: '&cNhấp để rời nghề'
+  admin:
+    error: '&cĐã xảy ra lỗi trong lệnh.'
+    success: '&eLệnh của bạn đã được thực hiện.'
+  error:
+    noHelpPage: '&cKhông có trang trợ giúp với số này!'
+    job: '&cNghề bạn chọn không tồn tại!'
+    jobname: '&cKhông thể tìm thấy nghề với tên này!'
+    # Only %playername% can be used here
+    noinfoByPlayer: '&cKhông tìm thấy thông tin nào với tên người chơi [%playername%]!'
+    worldisdisabled: '&cBạn không thể sử dụng lệnh trong thế giới này!'
+    newRegistration: '&eĐã đăng ký quyền sở hữu mới cho [block] &7[current]&e/&f[max]'
+    reenabledBlock: '&eĐã kích hoạt lại quyền sở hữu'
+    noRegistration: '&cBạn đã đạt tới số lượng [block] tối đa!'
+    blockDisabled: '&6Thanh toán từ &e[type] &6đã bị vô hiệu hóa. &2[location]'
+command:
+  help:
+    output:
+      cmdUsage: '&2Cách sử dụng: &7[command]'
+      label: Nghề nghiệp
+      cmdInfoFormat: '[command] &f- &2[description]'
+      cmdFormat: '&7/[command] &f[arguments]'
+      helpPageDescription: '&2* [description]'
+      title: '&e-------&e ======= &6Nghề nghiệp &e======= &e-------'
+  boost:
+    help:
+      info: Tăng cường thu nhập nghề cho tất cả người chơi
+      args: exp/money/points [jobname]/all/reset [rate] [time]
+    output:
+      allreset: '&aTất cả tăng cường đã được tắt'
+      alltypereset: '&aTất cả tăng cường &e%type% &ađã được tắt'
+      jobsboostreset: '&aTăng cường &e%boost% &ađã được thêm cho &e%jobname%!'
+      jobstypeboostreset: '&aTăng cường &e%boost% &ađã được thêm cho &e%jobname%!'
+      nothingtoreset: Không có gì để đặt lại
+      boostadded: '&aTăng cường &e%boost% &ađã được thêm cho &e%jobname%!'
+      infostats: '&c-----> &a%type% tỷ lệ x%boost% đã kích hoạt&c <-------'
+      boostStats: '&6%payments% &e%jobname%'
+  schedule:
+    help:
+      info: Kích hoạt bộ lập lịch đã cho
+      args: enable [scheduleName] [untilTime]
+    output:
+      noScheduleFound: '&cKhông tìm thấy lịch trình với tên này.'
+      alreadyEnabled: '&cLịch trình này đã được kích hoạt.'
+      enabled: '&eLịch trình đã được kích hoạt từ&a %from%&e đến&a %until%'
+  itembonus:
+    help:
+      info: Kiểm tra phần thưởng vật phẩm
+      args: ''
+    output:
+      list: '&e[jobname]: %money% %points% %exp%'
+      notAplyingList: '&7[jobname]: %money% %points% %exp%'
+      hover: '&7%itemtype%'
+      hoverLevelLimits: "&7Từ cấp: %from% \n&7Đến cấp: %until%"
+  edititembonus:
+    help:
+      info: Chỉnh sửa phần thưởng tăng cường vật phẩm
+      args: list/add/remove [jobname] [itemBoostName]
+  bonus:
+    help:
+      info: Hiển thị phần thưởng nghề
+      args: '[jobname]'
+    output:
+      topline: '&7**************** &2[money] &6[points] &e[exp] &7****************'
+      permission: ' &ePhần thưởng quyền: &2%money% &6%points% &e%exp%'
+      item: ' &ePhần thưởng vật phẩm: &2%money% &6%points% &e%exp%'
+      global: ' &ePhần thưởng toàn cục: &2%money% &6%points% &e%exp%'
+      dynamic: ' &ePhần thưởng động: &2%money% &6%points% &e%exp%'
+      nearspawner: ' &ePhần thưởng sinh quái: &2%money% &6%points% &e%exp%'
+      petpay: ' &ePhần thưởng thú cưng: &2%money% &6%points% &e%exp%'
+      area: ' &ePhần thưởng khu vực: &2%money% &6%points% &e%exp%'
+      mcmmo: ' &ePhần thưởng McMMO: &2%money% &6%points% &e%exp%'
+      final: ' &ePhần thưởng cuối: &2%money% &6%points% &e%exp%'
+      specialPrefix: '&6*'
+      finalExplanation: ' &eKhông bao gồm phần thưởng/phạt thú cưng và gần sinh quái'
+  convert:
+    help:
+      info: Chuyển đổi hệ thống cơ sở dữ liệu từ hệ thống này sang hệ thống khác. Nếu bạn đang
+        chạy SQLite, điều này sẽ chuyển đổi nó sang MySQL và ngược lại.
+      args: ''
+  limit:
+    help:
+      info: Hiển thị giới hạn thanh toán cho nghề
+      args: '[playername]'
+    output:
+      moneytime: '&eThời gian còn lại đến khi đặt lại giới hạn tiền: &2%time%'
+      moneyLimit: '&eGiới hạn tiền: &2%current%&e/&2%total%'
+      exptime: '&eThời gian còn lại đến khi đặt lại giới hạn Exp: &2%time%'
+      expLimit: '&eGiới hạn Exp: &2%current%&e/&2%total%'
+      pointstime: '&eThời gian còn lại đến khi đặt lại giới hạn Điểm: &2%time%'
+      pointsLimit: '&eGiới hạn Điểm: &2%current%&e/&2%total%'
+      reachedmoneylimit: '&4Bạn đã đạt giới hạn tiền trong thời gian đã cho!'
+      reachedmoneylimit2: '&eBạn có thể kiểm tra giới hạn của mình bằng lệnh &2/jobs limit &e'
+      reachedmoneylimit3: '&eTiền kiếm được hiện đang giảm theo cấp số nhân... Nhưng bạn
+        vẫn kiếm được một chút!'
+      reachedexplimit: '&4Bạn đã đạt giới hạn exp trong thời gian đã cho!'
+      reachedexplimit2: '&eBạn có thể kiểm tra giới hạn của mình bằng lệnh &2/jobs limit &e'
+      reachedpointslimit: '&4Bạn đã đạt giới hạn exp trong thời gian đã cho!'
+      reachedpointslimit2: '&eBạn có thể kiểm tra giới hạn của mình bằng lệnh &2/jobs limit &e'
+      notenabled: '&eGiới hạn tiền không được kích hoạt'
+  resetexploreregion:
+    help:
+      info: Đặt lại dữ liệu vùng Khám phá
+      args: world [worldname]
+    output:
+      notenabled: '&eKhông được kích hoạt.'
+      invalidname: '&eTên thế giới không hợp lệ'
+      reseted: '&eDữ liệu vùng khám phá đã được đặt lại cho: &2%worldname%'
+  resetlimit:
+    help:
+      info: Đặt lại giới hạn thanh toán của người chơi
+      args: '[playername]'
+    output:
+      reseted: '&eGiới hạn thanh toán đã được đặt lại cho: &2%playerdisplayname%'
+  resetquesttotal:
+    help:
+      info: Đặt lại bộ đếm nhiệm vụ đã hoàn thành của người chơi
+      args: '[playername]/all'
+    output:
+      reseted: '&eNhiệm vụ đã hoàn thành đã được đặt lại cho: &2%playerdisplayname%'
+  resetquest:
+    help:
+      info: Đặt lại nhiệm vụ của người chơi
+      args: '[playername] [jobname]'
+    output:
+      reseted: '&eNhiệm vụ đã được đặt lại cho: &2%playerdisplayname%'
+      noQuests: '&eKhông thể tìm thấy nhiệm vụ nào'
+  points:
+    help:
+      info: Hiển thị số điểm mà người chơi có.
+      args: '[playername]'
+    currentpoints: ' &eSố điểm hiện tại: &6%currentpoints%'
+    totalpoints: ' &eTổng số điểm đã thu thập đến nay: &6%totalpoints%'
+  editpoints:
+    help:
+      info: Chỉnh sửa điểm của người chơi.
+      args: set/add/take [playername] [amount]
+    output:
+      set: '&eDiểm của người chơi (&6%playerdisplayname%&e) đã được đặt thành &6%amount%'
+      add: '&eNgười chơi (&6%playerdisplayname%&e) đã nhận &6%amount% &ediểm. Số dư &6%total%'
+      take: '&eNgười chơi (&6%playerdisplayname%&e) đã mất &6%amount% &ediểm. Số dư
+        &6%total%'
+  editjobs:
+    help:
+      info: Chỉnh sửa nghề hiện tại.
+      args: ''
+      list:
+        job: '&eNghề:'
+        jobs: '  -> [&e%jobname%&r]'
+        actions: '    -> [&e%actionname%&r]'
+        material: '      -> [&e%materialname%&r]      '
+        materialRemove: '&c[X]'
+        materialAdd: '      -> &e[&2+&e]'
+        money: '        -> &eTiền: &6%amount%'
+        exp: '        -> &eExp: &6%amount%'
+        points: '        -> &eDiểm: &6%amount%'
+      modify:
+        newValue: '&eNhập giá trị mới'
+        enter: '&eNhập tên mới hoặc nhấn '
+        hand: '&6TAY '
+        handHover: '&6Nhấn để lấy thông tin từ vật phẩm trong tay bạn'
+        or: '&ehặc '
+        look: '&6ĐANG NHÌN'
+        lookHover: '&6Nhấn để lấy thông tin từ khối bạn đang nhìn'
+  editquests:
+    help:
+      info: Chỉnh sửa nhiệm vụ nghề.
+      args: (page)
+      output:
+        list: '&6[questName] &7- &f[jobName]'
+        name: '&eTên: &f'
+        job: ' &eNghề: &f'
+        chance: ' &eCơ hội: &f'
+        enabled: ' &eĐã kích hoạt: &f'
+        from: '&eCấp từ: &f'
+        to: ' &eđến: &f'
+        objectives: Mục tiêu
+        rewards: Lệnh phần thưởng
+        rewardAmount: ' &eSố lượng: &f'
+        description: '&eMô tả'
+        areas: '&eKhu vực bị hạn chế'
+  blockinfo:
+    help:
+      info: Hiển thị thông tin cho khối bạn đang nhìn.
+      args: ''
+    output:
+      material: ' &eTên khối: &6%blockname%'
+      id: ' &eId khối: &6%blockid%'
+      state: ' &eTrạng thái khối: &6%blockdata%'
+      deprecated: ' &eSử dụng: &6%first% &ehoặc &6%second%'
+      use: ' &eSử dụng tệp cấu hình: &6%usage%'
+  iteminfo:
+    help:
+      info: Hiển thị thông tin cho vật phẩm bạn đang cầm.
+      args: ''
+    output:
+      material: ' &eTên vật phẩm: &6%itemname%'
+      id: ' &eId vật phẩm: &6%itemid%'
+      data: ' &eDữ liệu vật phẩm: &6%itemdata%'
+      deprecated: ' &eSử dụng: &6%first% &ehoặc &6%second%'
+      use: ' &eSử dụng tệp cấu hình: &6%usage%'
+  placeholders:
+    help:
+      info: Liệt kê tất cả placeholders
+      args: (parse) (placeholder)
+    output:
+      list: '&e[place]. &7[placeholder]'
+      outputResult: ' &ekết quả: &7[result]'
+      parse: '&6[placeholder] &7bởi [source] &6kết quả &8|&f[result]&8|'
+  entitylist:
+    help:
+      info: Hiển thị tất cả các thực thể có thể được sử dụng với plugin.
+      args: ''
+  recalculatepermissions:
+    help:
+      info: Đặt lại cache quyền của người chơi
+      args: (playername)
+  stats:
+    help:
+      info: Hiển thị cấp độ bạn có trong mỗi nghề bạn tham gia.
+      args: '[playername]'
+    error:
+      nojob: Vui lòng gia nhập một nghề trước.
+    output:
+      Level: '&7Cấp &f%joblevel% &7cho &f%jobname%&7: &f%jobxp%&7/&f%jobmaxxp%&7xp'
+      maxLevel: '    &2Tối đa    &7Cấp &f%joblevel% &7cho &f%jobname%'
+    bossBarOutput: 'Cấp %joblevel% %jobname%: %jobxp%/%jobmaxxp% xp%gain%'
+    bossBarGain: ' &7(&f%gain%&7)'
+    barEmpty: '&7▏'
+    barFull: '&2▏'
+  shop:
+    help:
+      info: Mở cửa hàng nghề đặc biệt.
+      args: ''
+    info:
+      title: '&e------- &8Cửa hàng nghề &e-------'
+      haveColor: '&2'
+      pointsPrice: '&eGiá điểm: &c%currentpoints%&e/&6%price%'
+      moneyPrice: '&eGiá tiền: &c%currentbalance%&e/&6%price%'
+      reqJobs: '&eNghề yêu cầu:'
+      reqJobsList: '  &6%jobsname%&e: &e%level% cấp'
+      reqTotalLevel: '&6Tổng cấp độ yêu cầu: &e%totalLevel%'
+      reqJobsColor: '&4'
+      reqJobsLevelColor: '&4'
+      reqTotalLevelColor: '&4'
+      cantOpen: '&cKhông thể mở trang này'
+      NoPermForItem: '&cBạn không có quyền cần thiết cho vật phẩm này!'
+      NoPermToBuy: '&cKhông có quyền mua vật phẩm này'
+      NoJobReqForitem: '&cBạn không có nghề yêu cầu (&6%jobname%&c) với cấp độ yêu cầu
+        (&6%joblevel%&c)'
+      NoPoints: '&cBạn không có đủ điểm'
+      NoMoney: '&cBạn không có đủ tiền'
+      NoTotalLevel: '&cTổng cấp độ nghề quá thấp (%totalLevel%)'
+      Paid: '&eBạn đã trả &6%amount% &echo vật phẩm này'
+  archive:
+    help:
+      info: Hiển thị tất cả nghề đã lưu trong lưu trữ bởi người dùng.
+      args: '[playername]'
+    error:
+      nojob: Không có nghề nào được lưu.
+  give:
+    help:
+      info: Đưa vật phẩm theo tên nghề và tên danh mục vật phẩm. Tên người chơi là tùy chọn
+      args: '[playername] [jobname] [items/limiteditems] [jobitemname]'
+    output:
+      notonline: '&4Người chơi với tên đó không trực tuyến!'
+      noitem: '&4Không thể tìm thấy vật phẩm nào với tên đã cho!'
+  info:
+    help:
+      title: '&2*** &eNghề&2 ***'
+      info: Hiển thị mỗi nghề được trả bao nhiều và cho cái gì.
+      penalty: '&eNghề này có phạt &c[penalty]% &evì có quá nhiều
+        người chơi làm việc trong đó.'
+      bonus: '&eNghề này có thưởng &2[bonus]% &evì không có đủ
+        người chơi làm việc trong đó.'
+      args: '[jobname] [action]'
+      actions: '&eHành động hợp lệ là: &f%actions%'
+      max: ' - &ecấp tối đa:&f '
+      newMax: ' &eCấp tối đa: &f[max]'
+      jobName: '&7%jobdisplayname%'
+      material: '&7%material%'
+      levelRange: ' &a(&e%levelFrom% &a- &e%levelUntil% &acấp)'
+      levelFrom: ' &a(từ cấp &e%levelFrom% &a)'
+      levelUntil: ' &a(đến cấp &e%levelUntil% &a)'
+      money: ' &2%money%$'
+      points: ' &6%points%điểm'
+      exp: ' &e%exp%xp'
+    gui:
+      pickjob: '&eChọn nghề của bạn!'
+      jobinfo: '&e[jobname] thông tin!'
+      actions: '&eHành động hợp lệ là:'
+      leftClick: '&eNhấp trái để biết thêm thông tin'
+      middleClick: '&eNhấp giữa để rời nghề này'
+      qClick: '&ePhím Q để rời nghề này'
+      rightClick: '&eNhấp phải để gia nhập nghề'
+      leftSlots: '&eSlot còn lại:&f '
+      working: '&2&nĐã làm việc'
+      cantJoin: '&cBạn không thể gia nhập nghề đã chọn.'
+      max: '&eCấp tối đa:&f '
+      infoLore:
+      - '&7Đóng'
+    output:
+      break:
+        info: '&ePhá'
+        none: '%jobname% không nhận tiền cho hành động (Phá).'
+      striplogs:
+        info: '&eChặt gỗ'
+        none: '%jobname% không nhận tiền cho hành động (Chặt gỗ).'
+      tntbreak:
+        info: '&ePhá TNT'
+        none: '%jobname% không nhận tiền cho hành động (Phá TNT).'
+      place:
+        info: '&eĐặt'
+        none: '%jobname% không nhận tiền cho hành động (Đặt).'
+      kill:
+        info: '&eGiết'
+        none: '%jobname% không nhận tiền cho hành động (Giết).'
+      mmkill:
+        info: '&eGiết MM'
+        none: '%jobname% không nhận tiền cho hành động (Giết MM).'
+      fish:
+        info: '&eCâu cá'
+        none: '%jobname% không nhận tiền cho hành động (Câu cá).'
+      pyrofishingpro:
+        info: '&ePyroFishingPro'
+        none: '%jobname% không nhận tiền cho hành động (PyroFishingPro).'
+      customfishing:
+        info: '&eCâu cá tùy chỉnh'
+        none: '%jobname% không nhận tiền cho hành động (Câu cá tùy chỉnh).'
+      craft:
+        info: '&eChế tạo'
+        none: '%jobname% không nhận tiền cho hành động (Chế tạo).'
+      vtrade:
+        info: '&eGiao dịch V'
+        none: '%jobname% không nhận tiền cho hành động (Giao dịch V).'
+      smelt:
+        info: '&eNấu'
+        none: '%jobname% không nhận tiền cho hành động (Nấu).'
+      brew:
+        info: '&ePha chế'
+        none: '%jobname% không nhận tiền cho hành động (Pha chế).'
+      enchant:
+        info: '&eMê hoặc'
+        none: '%jobname% không nhận tiền cho hành động (Mê hoặc).'
+      repair:
+        info: '&eSửa chữa'
+        none: '%jobname% không nhận tiền cho hành động (Sửa chữa).'
+      breed:
+        info: '&eNhân giống'
+        none: '%jobname% không nhận tiền cho hành động (Nhân giống).'
+      tame:
+        info: '&eHuấn luyện'
+        none: '%jobname% không nhận tiền cho hành động (Huấn luyện).'
+      dye:
+        info: '&eNhuộm'
+        none: '%jobname% không nhận tiền cho hành động (Nhuộm).'
+      shear:
+        info: '&eCắt lông'
+        none: '%jobname% không nhận tiền cho hành động (Cắt lông).'
+      milk:
+        info: '&eVắt sữa'
+        none: '%jobname% không nhận tiền cho hành động (Vắt sữa).'
+      explore:
+        info: '&eKhám phá'
+        none: '%jobname% không nhận tiền cho hành động (Khám phá).'
+      eat:
+        info: '&eĂn'
+        none: '%jobname% không nhận tiền cho hành động (Ăn).'
+      customkill:
+        info: '&egiết-tùy-chỉnh'
+        none: '%jobname% không nhận tiền cho hành động (giết-tùy-chỉnh).'
+      collect:
+        info: '&eThu thập'
+        none: '%jobname% không nhận tiền cho hành động (Thu thập).'
+      bake:
+        info: '&eNướng'
+        none: '%jobname% không nhận tiền cho hành động (Nướng).'
+      bucket:
+        info: '&eXô'
+        none: '%jobname% không nhận tiền cho hành động (Xô).'
+      brush:
+        info: '&eCọ'
+        none: '%jobname% không nhận tiền cho hành động (Cọ).'
+      vax:
+        info: '&eVax'
+        none: '%jobname% không nhận tiền cho hành động (Vax).'
+  playerinfo:
+    help:
+      info: Hiển thị mỗi nghề được trả bao nhiều và cho cái gì trên người chơi khác.
+      args: '[playername] [jobname] [action]'
+  join:
+    help:
+      info: Gia nhập nghề đã chọn.
+      args: '[jobfullname]'
+    error:
+      alreadyin: Bạn đã có trong nghề %jobname%.
+      fullslots: Bạn không thể gia nhập nghề %jobname%, không có slot trống.
+      maxjobs: Bạn đã gia nhập quá nhiều nghề.
+      rejoin: '&cKhông thể gia nhập lại nghề này. Đợi [time]'
+    rejoin: '&aNhấp để gia nhập lại nghề này: '
+    success: Bạn đã gia nhập nghề %jobname%.
+    confirm: '&2Nhấp để xác nhận hành động gia nhập cho nghề &7[jobname] &2.'
+  leave:
+    help:
+      info: Rời nghề đã chọn.
+      args: '[oldplayerjob]'
+    success: '&2Bạn đã rời nghề &7[jobname].'
+    confirmationNeed: '&cBạn có chắc chắn muốn rời khỏi nghề&e [jobname]&c? Gõ
+      lệnh lại trong vòng&6 [time] giây &cđể xác nhận!'
+  leaveall:
+    help:
+      info: Rời tất cả nghề của bạn.
+    error:
+      nojobs: Bạn không có nghề nào để rời!
+    success: Bạn đã rời tất cả nghề.
+    confirmationNeed: '&cBạn có chắc chắn muốn rời khỏi tất cả nghề? Gõ lệnh
+      lại trong vòng&6 [time] giây &cđể xác nhận!'
+  explored:
+    help:
+      info: Kiểm tra ai đã ghé thăm chunk này
+    error:
+      noexplore: Không ai ghé thăm chunk này
+    fullExplore: '&aChunk này đã được khám phá hoàn toàn'
+    list: '&e%place%. %playername%'
+  browse:
+    help:
+      info: Liệt kê các nghề có sẵn cho bạn.
+    error:
+      nojobs: Không có nghề nào bạn có thể gia nhập.
+    output:
+      header: 'Bạn được phép gia nhập các nghề sau:'
+      footer: Để biết thêm thông tin, gõ /jobs info [JobName]
+      totalWorkers: ' &7Công nhân: &e[amount]'
+      penalty: ' &4Phạt: &c[amount]%'
+      bonus: ' &2Thưởng: &a[amount]%'
+      newHeader: '&2========== [amount] Nghề có sẵn ========='
+      description: '[description]'
+      list: '    &8[place]. &7[jobname]'
+      console:
+        newHeader: '&2========== [amount] Nghề có sẵn ========='
+        description: '[description]'
+        totalWorkers: ' &7Công nhân: &e[amount]'
+        penalty: ' &4Phạt: &c[amount]%'
+        bonus: ' &2Thưởng: &a[amount]%'
+        list: ' &6[jobname]'
+        newMax: ' &eCấp tối đa: &f[max]'
+      click: '&bNhấp vào nghề để xem thêm thông tin về nó!'
+      detailed: '&bNhấp để xem danh sách chi tiết về hành động nghề'
+      jobHeader: '&2========== [jobname] ========='
+      chooseJob: '&7&n&oChọn nghề này'
+      chooseJobHover: '&7Nhấp vào đây để có nghề này'
+  ownedblocks:
+    help:
+      info: Kiểm tra quyền sở hữu khối
+      args: '[playername]'
+    output:
+      list: '&6[place]. &e[type] -> [location]'
+      listHover: '&6Nhấp để xóa: [location]'
+      disabled: '&6(vô hiệu hóa)'
+      disabledHover: '&6Khối này bị vô hiệu hóa do hành động hopper'
+  clearownership:
+    help:
+      info: Xóa quyền sở hữu khối
+      args: '[playername]'
+    output:
+      cleared: '&2Đã xóa &7[furnaces] &2lò nung &7[brewing] &2pha chế &7[smoker]&2
+        hun khói &7[blast]&2 lò cao'
+      lost: '&cMất quyền sở hữu &7[type] &ctại [location]'
+  skipquest:
+    help:
+      info: Bỏ qua nhiệm vụ đã định và nhận nhiệm vụ mới
+      args: '[jobname] [questname] (playerName)'
+    output:
+      questSkipForCost: '&2Bạn đã bỏ qua nhiệm vụ và trả:&e %amount%$'
+    confirmationNeed: '&cBạn có chắc chắn muốn bỏ qua nhiệm vụ&e [questName]&c? Gõ
+      lệnh lại trong vòng&6 [time] giây &cđể xác nhận!'
+  quests:
+    help:
+      info: Liệt kê các nhiệm vụ có sẵn
+      args: '[playername]'
+    error:
+      noquests: '&cKhông có nhiệm vụ nào'
+    toplineseparator: '&7*********************** &6[playerName] &2(&f[questsDone]&2)
+      &7***********************'
+    status:
+      changed: '&2Trạng thái nhiệm vụ đã được thay đổi thành&r %status%'
+      started: '&aBắt đầu'
+      stopped: '&cDừng'
+    output:
+      completed: '&2      !Hoàn thành!&r      '
+      questLine: '[progress] &7[questName] &f[done]&7/&8[required]'
+      skip: '&7Nhấp để bỏ qua nhiệm vụ này'
+      skips: '&7Lần bỏ qua còn lại: &f[skips]'
+      hover: "&f[jobName] \n[desc] \n&7Nhiệm vụ mới trong: [time]"
+  fire:
+    help:
+      info: Sa thải người chơi khỏi nghề.
+      args: '[playername] [jobname]'
+    error:
+      nojob: Người chơi không có nghề %jobname%.
+    output:
+      target: Bạn đã bị sa thải khỏi %jobname%.
+  fireall:
+    help:
+      info: Sa thải người chơi khỏi tất cả nghề của họ.
+      args: '[playername]/all'
+    error:
+      nojobs: Người chơi không có nghề nào để bị sa thải!
+    output:
+      target: Bạn đã bị sa thải khỏi tất cả nghề.
+  employ:
+    help:
+      info: Tuyển dụng người chơi vào nghề.
+      args: '[playername] [jobname]'
+    error:
+      alreadyin: Người chơi đã có trong nghề %jobname%.
+      fullslots: Bạn không thể gia nhập nghề %jobname%, không có slot trống.
+    output:
+      target: Bạn đã được tuyển dụng làm %jobname%.
+  top:
+    help:
+      info: Hiển thị top người chơi theo tên nghề.
+      args: '[jobname]/clear pageNumber'
+    error:
+      nojob: Không thể tìm thấy nghề nào với tên này.
+    output:
+      topline: '&aTop&e %amount% &anguời chơi theo nghề &e%jobname% &a'
+      list: '&e%number%&a. &e%playerdisplayname% &acấp &e%level% &avới&e %exp% &aexp'
+  gtop:
+    help:
+      info: Hiển thị top người chơi theo cấp độ nghề toàn cục.
+      args: clear/pageNumber
+    output:
+      topline: '&aTop&e %amount% &anguời chơi theo cấp độ nghề toàn cục'
+      list: '&e%number%&a. &e%playerdisplayname% &acấp &e%level% &avới&e %exp% &aexp'
+  gqtop:
+    help:
+      info: Hiển thị top người chơi theo nhiệm vụ đã hoàn thành.
+      args: clear/pageNumber
+    output:
+      topline: '&aTop&e %amount% &anguời chơi theo nhiệm vụ đã hoàn thành'
+      list: '&e%number%&a. &e%playerdisplayname% &acấp &e%level% &avới&e %exp% &aexp'
+  area:
+    help:
+      info: Chỉnh sửa khu vực bị hạn chế.
+      args: add/remove/info/list
+      addUsage: '&eCách sử dụng: &6/Jobs area add [areaName/wg:worldGuardAreaName] [bonus]'
+      removeUsage: '&eCách sử dụng: &6/Jobs area remove [areaName]'
+    output:
+      addedNew: '&eĐã thêm khu vực hạn chế mới với &6%bonus% &ethưởng'
+      removed: '&eĐã xóa khu vực hạn chế &6%name%'
+      lists: '&7%number%&f. &7%areaname% &f%worldname% &7(&a%x1%:%y1%:%z1%&7/&e%x2%:%y2%:%z2%&7)
+        &2%money% &6%points% &e%exp%'
+      wgLists: '&7%number%&f. WorldGuard: &7%areaname% &2%money% &6%points% &e%exp%'
+      noAreas: '&eKhông có khu vực hạn chế nào được lưu'
+      noAreasByLoc: '&eKhông có khu vực hạn chế nào ở vị trí này'
+      areaList: '&eKhu vực hạn chế theo vị trí của bạn: &6%list%'
+      selected1: '&eĐã chọn điểm đầu tiên: &6%x%:%y%:%z%'
+      selected2: '&eĐã chọn điểm thứ hai: &6%x%:%y%:%z%'
+      select: '&eChọn 2 điểm với công cụ chọn (%tool%)'
+      exist: '&eKhu vực hạn chế với tên này đã tồn tại'
+      dontExist: '&eKhu vực hạn chế với tên này không tồn tại'
+      wgDontExist: '&eKhu vực WorldGuard với tên này không tồn tại'
+  log:
+    help:
+      info: Hiển thị thống kê.
+      args: '[playername]'
+    output:
+      topline: '&7************************* &6%playerdisplayname% &7*************************'
+      ls: '&7* &6%number%. &3%action%: &6%item% &esố lượng: %qty% %money%%exp%%points%'
+      money: '&6tiền: %amount% '
+      exp: '&eexp: %amount% '
+      points: '&6điểm: %amount%'
+      totalIncomes: '    &6Tổng tiền:&2 %money%&6, Tổng exp:&2 %exp%&6, Tổng điểm:&2
+        %points%'
+      bottomline: '&7***********************************************************'
+      prev: '&e<<<<< Trang trước &2|'
+      next: '&2|&e Trang sau >>>>'
+      nodata: '&cKhông tìm thấy dữ liệu'
+  glog:
+    help:
+      info: Hiển thị thống kê toàn cục.
+      args: ''
+    output:
+      topline: '&7*********************** &6Thống kê toàn cục &7***********************'
+      ls: '&7* &6%number%. &3%action%: &6%item% &esố lượng: %qty% %money%%exp%%points%'
+      money: '&6tiền: %amount% '
+      exp: '&eexp: %amount% '
+      points: '&6điểm: %amount%'
+      totalIncomes: '    &6Tổng tiền:&2 %money%&6, Tổng exp:&2 %exp%&6, Tổng điểm:&2
+        %points%'
+      bottomline: '&7**************************************************************'
+      nodata: '&cKhông tìm thấy dữ liệu'
+  transfer:
+    help:
+      info: Chuyển nghề của người chơi từ nghề cũ sang nghề mới.
+      args: '[playername] [oldjob] [newjob]'
+    output:
+      target: '&fBạn đã được chuyển từ %oldjobname% &fsang %newjobname%.'
+  promote:
+    help:
+      info: Thăng cấp người chơi X cấp trong một nghề.
+      args: '[playername] [jobname] [levels] (-cmd)'
+    output:
+      target: Bạn đã được thăng %levelsgained% cấp trong %jobname%.
+  exp:
+    help:
+      info: Thay đổi exp của người chơi cho nghề.
+      args: '[playername] [jobname] set/add/take [amount](rand_[min]-[max]) (-s) (-sa)'
+    error:
+      nojob: '&cNgười chơi này phải gia nhập một nghề trước.'
+    output:
+      target: '&eExp của bạn đã được thay đổi cho %jobname% &evà bây giờ bạn ở &6%level%cấp
+        &evà với &6%exp%exp.'
+  level:
+    help:
+      info: Thay đổi cấp độ của người chơi trong một nghề.
+      args: '[playername] [jobname] set/add/take [amount]'
+    error:
+      nojob: '&cNgười chơi này phải gia nhập một nghề trước.'
+    output:
+      target: '&eCấp độ của bạn đã được thay đổi cho %jobname% &evà bây giờ bạn ở &6%level%cấp
+        &evà với &6%exp%exp.'
+  demote:
+    help:
+      info: Giáng cấp người chơi X cấp trong một nghề.
+      args: '[playername] [jobname] [levels]'
+    output:
+      target: Bạn đã bị giáng %levelslost% cấp trong %jobname%.
+  grantxp:
+    help:
+      info: Tặng người chơi X kinh nghiệm trong một nghề.
+      args: '[playername] [jobname] [xp]'
+    output:
+      target: Bạn đã được tặng %xpgained% kinh nghiệm trong %jobname%.
+  removexp:
+    help:
+      info: Xóa X kinh nghiệm từ người chơi trong một nghề.
+      args: '[playername] [jobname] [xp]'
+    output:
+      target: Bạn đã mất %xplost% kinh nghiệm trong %jobname%.
+  signupdate:
+    help:
+      info: Cập nhật thủ công một biển theo tên của nó
+      args: '[jobname]'
+  bp:
+    help:
+      info: Hiển thị bảo vệ khối xung quanh bạn trong bán kính 10 khối
+      args: ''
+    output:
+      found: '&eĐã tìm thấy &6%amount% &ekhối được bảo vệ xung quanh bạn'
+      notFound: '&eKhông tìm thấy khối được bảo vệ nào xung quanh bạn'
+  reload:
+    help:
+      info: Tải lại cấu hình.
+  toggle:
+    help:
+      info: Bật/tắt đầu ra thanh toán trên thanh hành động hoặc thanh boss.
+      args: actionbar/bossbar
+    output:
+      turnedoff: '&4Tính năng này đã được tắt!'
+      paid:
+        main: '&aBạn đã nhận:'
+        money: '&e[amount] tiền'
+        exp: '&7[exp] exp'
+        points: '&6[points] điểm'
+        ACmoney: '&e+[amount]$ '
+        ACexp: '&7+[exp]XP '
+        ACpoints: '&6+[points]pts '
+      Rapid: '&7[type]&a: &7Nhanh'
+      Batched: '&7[type]&a: &fLô'
+      'Off': '&7[type]&a: &6Tắt'
+  howmuch:
+    help:
+      info: Kiểm tra thanh toán tiềm năng bởi thực thể hoặc khối mục tiêu
+      args: ''
+  version:
+    output:
+      payment: '&e[job] &f[action] &7[target] [exp] [money] [points]'
+      nopayment: '&7Không thể tìm thấy thanh toán nào ([target])'
+      jobsVersion: '&eNghề: &6[version]'
+      jobsVersionNew: '&e-> [newVersion]'
+      dbType: ' &7[db]'
+      newServer: '&eServer: &6[version]'
+      Economy: '&eKinh tế: &6[provider] '
+      newVault: '&eVault: &6[version] '
+      CMILib: '&eCMILib: &6[version] '
+      cmilVersionNew: '&e-> [newVersion]'
+    help:
+      info: Thông tin phiên bản plugin
+      args: ''
+message:
+  skillup:
+    broadcast: '%playerdisplayname% đã được thăng chức thành %titlename% %jobname%.'
+    nobroadcast: Chúc mừng, bạn đã được thăng chức thành %titlename% %jobname%.
+  levelup:
+    broadcast: '%playerdisplayname% giờ là cấp %joblevel% %jobname%.'
+    nobroadcast: Bạn giờ là cấp %joblevel% %jobname%.
+  leveldown:
+    message: '&cBạn đã mất cấp&e %lostLevel%&c trong nghề&e %jobname%&c! Cấp:&6 %joblevel%&c.'
+  cowtimer: '&eBạn vẫn cần đợi &6%time% &egiây để được trả tiền cho nghề này.'
+  blocktimer: '&eBạn cần đợi &3[time] &egiây nữa để được trả tiền cho việc này!'
+  taxes: '&3[amount] &ethuế server đã được chuyển vào tài khoản này'
+  boostStarted: '&eThời gian tăng cường nghề đã bắt đầu!'
+  boostStoped: '&eThời gian tăng cường nghề đã kết thúc!'
+  crafting:
+    fullinventory: '&cTúi đồ của bạn đã đầy!'
+signs:
+  List: '&0[number].&8[player]&7:&4[level]'
+  questList: '&0[number].&8[player]&7:&4[quests]'
+  SpecialList:
+    p1: '&b** &8Nhất &b**'
+    p2: '&b** &8Nhì &b**'
+    p3: '&b** &8Ba &b**'
+    p4: '&b** &8Tư &b**'
+    p5: '&b** &8Năm &b**'
+    p6: '&b** &8Sáu &b**'
+    p7: '&b** &8Bảy &b**'
+    p8: '&b** &8Tám &b**'
+    p9: '&b** &8Chín &b**'
+    p10: '&b** &8Mười &b**'
+    name: '&9[player]'
+    level: '&8cấp [level]'
+    quests: '&8[quests] nhiệm vụ'
+    bottom: '&b************'
+  cantcreate: '&4Bạn không thể tạo biển này!'
+  cantdestroy: '&4Bạn không thể phá hủy biển này!'
+  topline: '&0[Jobs]'
+  secondline:
+    join: '&0Gia nhập'
+    leave: '&0Rời'
+    toggle: '&0Bật/Tắt'
+    top: '&0Top'
+    browse: '&0Duyệt'
+    stats: '&0Thống kê'
+    limit: '&0Giới hạn'
+    info: '&0Thông tin'
+    archive: '&0Lưu trữ'
+scoreboard:
+  topline: '&2Top &e%jobname%'
+  gtopline: '&2Danh sách top toàn cục'
+  line: '&2%number%. &e%playerdisplayname% &e(&6%level%&e)'
