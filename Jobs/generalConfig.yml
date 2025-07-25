@@ -7,7 +7,7 @@
 # Default language.
 # Example: en, ru
 # File in locale folder with same name should exist. Example: messages_ru.yml
-locale-language: en
+locale-language: vi
 storage:
   # storage method, can be MySQL or sqlite
   method: sqlite
