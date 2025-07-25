@@ -228,8 +228,6 @@ essentials/
 .paper-remapped/
 bStats/
 CMILib/
-EconomyDate*/
-Economy*/
 permissions.yml
 whitelist.json
 banned-ips.json
