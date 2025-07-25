@@ -108,5 +108,5 @@ Explorer:
       experience: 10
   Kill:
     Player:
-      income: 20
+      income: 0
       experience: 7.5

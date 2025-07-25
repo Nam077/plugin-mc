@@ -73,23 +73,23 @@ Fisherman:
     ItemStack: fishing_rod
   Fish:
     cod:
-      income: 16
+      income: 0
       points: 15
       experience: 15
     salmon:
-      income: 16
+      income: 0
       points: 20
       experience: 25
     tropical_fish:
-      income: 16
+      income: 0
       points: 25
       experience: 25
     pufferfish:
-      income: 16
+      income: 0
       points: 25
       experience: 25
   Kill:
     Player:
-      income: 16
+      income: 0
       points: 7.5
       experience: 7.5

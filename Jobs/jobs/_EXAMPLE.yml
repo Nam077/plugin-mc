@@ -49,7 +49,7 @@ exampleJob:
       toLevel: 5
   Break:
     oak_log:
-      income: 15
+      income: 0
       points: 5
       experience: 5
       from-level: 1
@@ -58,22 +58,22 @@ exampleJob:
       softExpLimit: 40
       softPointsLimit: 60
     gravel:
-      income: 15
+      income: 0
   Collect:
     sweet_berries:
-      income: 15
+      income: 0
       experience: 1
     bonemeal:
-      income: 15
+      income: 0
       experience: 1.5
     honeycomb:
-      income: 15
+      income: 0
       experience: 2.5
     honey_bottle:
-      income: 15
+      income: 0
       experience: 1
     glow_berries:
-      income: 15
+      income: 0
       experience: 0.5
   Bucket:
     PUFFERFISH_BUCKET:
@@ -187,7 +187,7 @@ exampleJob:
       experience: 2
   Kill:
     Player:
-      income: 15
+      income: 0
       experience: 7.5
   MMKill:
     CustomNameHere:
@@ -199,11 +199,11 @@ exampleJob:
       experience: 10
   Tame:
     Wolf:
-      income: 15
+      income: 0
       experience: 5
   Breed:
     Wolf:
-      income: 15
+      income: 0
       experience: 5
   Eat:
     cooked_rabbit:
@@ -214,59 +214,59 @@ exampleJob:
       experience: 5
   Milk:
     Cow:
-      income: 15
+      income: 0
       experience: 5
     MushroomCow:
-      income: 15
+      income: 0
       experience: 10
   Shear:
     Black:
-      income: 15
+      income: 0
       experience: 5
     Blue:
-      income: 15
+      income: 0
       experience: 5
     Brown:
-      income: 15
+      income: 0
       experience: 5
     Cyan:
-      income: 15
+      income: 0
       experience: 5
     Gray:
-      income: 15
+      income: 0
       experience: 5
     Green:
-      income: 15
+      income: 0
       experience: 5
     Light_Blue:
-      income: 15
+      income: 0
       experience: 5
     Lime:
-      income: 15
+      income: 0
       experience: 5
     Magenta:
-      income: 15
+      income: 0
       experience: 5
     Orange:
-      income: 15
+      income: 0
       experience: 5
     Pink:
-      income: 15
+      income: 0
       experience: 5
     Purple:
-      income: 15
+      income: 0
       experience: 5
     Red:
-      income: 15
+      income: 0
       experience: 5
     Light_Gray:
-      income: 15
+      income: 0
       experience: 5
     White:
-      income: 15
+      income: 0
       experience: 5
     Yellow:
-      income: 15
+      income: 0
       experience: 5
   Dye:
     leather_boots:
@@ -283,10 +283,10 @@ exampleJob:
       experience: 1
   Fish:
     raw_fish:
-      income: 15
+      income: 0
       experience: 25
     legacy_raw_fish:
-      income: 15
+      income: 0
       experience: 25
   PyroFishingPro:
     CustomTier:
@@ -298,50 +298,50 @@ exampleJob:
       experience: 1
   Repair:
     wood_sword:
-      income: 15
+      income: 0
       experience: 1
     iron_sword:
-      income: 15
+      income: 0
       experience: 2
   Craft:
     wood_sword:
-      income: 15
+      income: 0
       experience: 3
     leather_boots:
-      income: 15
+      income: 0
       experience: 6
     '!Healing Bandage':
-      income: 15
+      income: 0
       experience: 6
     tipped_arrow:slowness:
-      income: 15
+      income: 0
       experience: 1
   Smelt:
     iron_ingot:
-      income: 15
+      income: 0
       experience: 8
     gold_ingot:
-      income: 15
+      income: 0
       experience: 12
   Enchant:
     wood_sword:
-      income: 15
+      income: 0
       experience: 3
     leather_boots:
-      income: 15
+      income: 0
       experience: 6
     DIG_SPEED-1:
-      income: 15
+      income: 0
       experience: 10
     dig_speed-2:
-      income: 15
+      income: 0
       experience: 20
   Brew:
     nether_stalk:
-      income: 15
+      income: 0
       experience: 3
     redstone:
-      income: 15
+      income: 0
       experience: 3
   Brush:
     suspicious_sand:

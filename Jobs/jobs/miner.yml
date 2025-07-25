@@ -102,184 +102,184 @@ Miner:
       experience: 0.5
   Break:
     andesite:
-      income: 18
+      income: 0
       points: 1
       experience: 1
     stone:
-      income: 18
+      income: 0
       points: 1
       experience: 1
     deepslate:
-      income: 18
+      income: 0
       points: 1.25
       experience: 1.25
     granite:
-      income: 18
+      income: 0
       points: 1
       experience: 1
     diorite:
-      income: 18
+      income: 0
       points: 1
       experience: 1
     sandstone:
-      income: 18
+      income: 0
       points: 0.15
       experience: 0.2
     chiseled_sandstone:
-      income: 18
+      income: 0
       points: 0.15
       experience: 0.2
     cut_sandstone:
-      income: 18
+      income: 0
       points: 0.15
       experience: 0.2
     coal_ore:
-      income: 18
+      income: 0
       points: 2
       experience: 2
     deepslate_coal_ore:
-      income: 18
+      income: 0
       points: 3
       experience: 3
     redstone_ore:
-      income: 18
+      income: 0
       points: 2
       experience: 2
     deepslate_redstone_ore:
-      income: 18
+      income: 0
       points: 3
       experience: 3
     copper_ore:
-      income: 18
+      income: 0
       points: 3
       experience: 2
     deepslate_copper_ore:
-      income: 18
+      income: 0
       points: 4
       experience: 3
     iron_ore:
-      income: 18
+      income: 0
       points: 3
       experience: 2
     deepslate_iron_ore:
-      income: 18
+      income: 0
       points: 4
       experience: 3
     gold_ore:
-      income: 18
+      income: 0
       points: 4
       experience: 2
     deepslate_gold_ore:
-      income: 18
+      income: 0
       points: 5
       experience: 3
     lapis_ore:
-      income: 18
+      income: 0
       points: 6
       experience: 2
     deepslate_lapis_ore:
-      income: 18
+      income: 0
       points: 7
       experience: 3
     diamond_ore:
-      income: 18
+      income: 0
       points: 10
       experience: 10
     deepslate_diamond_ore:
-      income: 18
+      income: 0
       points: 12.5
       experience: 12.5
     emerald_ore:
-      income: 18
+      income: 0
       points: 15
       experience: 30
     deepslate_emerald_ore:
-      income: 18
+      income: 0
       points: 17.5
       experience: 35
     nether_quartz_ore:
-      income: 18
+      income: 0
       points: 2.5
       experience: 2.5
     obsidian:
-      income: 18
+      income: 0
       points: 5
       experience: 5
     cobblestone_wall:
-      income: 18
+      income: 0
       points: 2.5
       experience: 2.5
     mossy_cobblestone_wall:
-      income: 18
+      income: 0
       points: 2.5
       experience: 2.5
     nether_bricks:
-      income: 18
+      income: 0
       points: 1
       experience: 1
     nether_brick_stairs:
-      income: 18
+      income: 0
       points: 3
       experience: 3
     nether_brick_fence:
-      income: 18
+      income: 0
       points: 1
       experience: 1
     netherrack:
-      income: 18
+      income: 0
       points: 0.1
       experience: 0.1
     prismarine:
-      income: 18
+      income: 0
       points: 2.5
       experience: 2.5
     prismarine_bricks:
-      income: 18
+      income: 0
       points: 2.5
       experience: 2.5
     dark_prismarine:
-      income: 18
+      income: 0
       points: 2.5
       experience: 2.5
   Place:
     rail:
-      income: 18
+      income: 0
       points: 2
       experience: 2
     iron_ore:
-      income: 18
+      income: 0
       points: -5
       experience: -5
     deepslate_iron_ore:
-      income: 18
+      income: 0
       points: -5
       experience: -5
     gold_ore:
-      income: 18
+      income: 0
       points: -6
       experience: -6
     deepslate_gold_ore:
-      income: 18
+      income: 0
       points: -6
       experience: -6
     diamond_ore:
-      income: 18
+      income: 0
       points: -10
       experience: -10
     deepslate_diamond_ore:
-      income: 18
+      income: 0
       points: -12.5
       experience: -12.5
     emerald_ore:
-      income: 18
+      income: 0
       points: -15
       experience: -30
     deepslate_emerald_ore:
-      income: 18
+      income: 0
       points: -17.5
       experience: -35
   Kill:
     Player:
-      income: 18
+      income: 0
       points: 7.5
       experience: 7.5

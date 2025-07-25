@@ -70,70 +70,70 @@ Brewer:
     ItemStack: brewing_stand
   Brew:
     nether_wart:
-      income: 22
+      income: 0
       points: 6
       experience: 6
     redstone:
-      income: 22
+      income: 0
       points: 6
       experience: 6
     glowstone_dust:
-      income: 22
+      income: 0
       points: 8
       experience: 8
     fermented_spider_eye:
-      income: 22
+      income: 0
       points: 12
       experience: 12
     gunpowder:
-      income: 22
+      income: 0
       points: 6
       experience: 6
     dragon_breath:
-      income: 22
+      income: 0
       points: 25
       experience: 25
     sugar:
-      income: 22
+      income: 0
       points: 7
       experience: 7
     rabbit_foot:
-      income: 22
+      income: 0
       points: 18
       experience: 18
     glistering_melon_slice:
-      income: 22
+      income: 0
       points: 10
       experience: 10
     spider_eye:
-      income: 22
+      income: 0
       points: 9
       experience: 9
     pufferfish:
-      income: 22
+      income: 0
       points: 14
       experience: 14
     magma_cream:
-      income: 22
+      income: 0
       points: 12
       experience: 12
     golden_carrot:
-      income: 22
+      income: 0
       points: 14
       experience: 14
     blaze_powder:
-      income: 22
+      income: 0
       points: 12
       experience: 12
     ghast_tear:
-      income: 22
+      income: 0
       points: 22
       experience: 22
     turtle_helmet:
-      income: 22
+      income: 0
       points: 12
       experience: 12
     phantom_membrane:
-      income: 22
+      income: 0
       points: 12
       experience: 12

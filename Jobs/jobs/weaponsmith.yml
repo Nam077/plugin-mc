@@ -75,124 +75,124 @@ Weaponsmith:
     ItemStack: crafting_table
   Craft:
     wooden_sword:
-      income: 25
+      income: 0
       points: 1
       experience: 2
     leather_boots:
-      income: 25
+      income: 0
       points: 3
       experience: 4
     leather_chestplate:
-      income: 25
+      income: 0
       points: 4
       experience: 8
     leather_helmet:
-      income: 25
+      income: 0
       points: 2.5
       experience: 5
     leather_leggings:
-      income: 25
+      income: 0
       points: 3.5
       experience: 7
     iron_sword:
-      income: 25
+      income: 0
       points: 4
       experience: 8
     iron_boots:
-      income: 25
+      income: 0
       points: 8
       experience: 16
     iron_chestplate:
-      income: 25
+      income: 0
       points: 16
       experience: 32
     iron_helmet:
-      income: 25
+      income: 0
       points: 10
       experience: 20
     iron_leggings:
-      income: 25
+      income: 0
       points: 14
       experience: 28
     gold_sword:
-      income: 25
+      income: 0
       points: 6
       experience: 12
     gold_boots:
-      income: 25
+      income: 0
       points: 12
       experience: 24
     gold_chestplate:
-      income: 25
+      income: 0
       points: 24
       experience: 48
     gold_helmet:
-      income: 25
+      income: 0
       points: 15
       experience: 30
     gold_leggings:
-      income: 25
+      income: 0
       points: 21
       experience: 42
     diamond_sword:
-      income: 25
+      income: 0
       points: 8
       experience: 16
     diamond_pickaxe:
-      income: 25
+      income: 0
       points: 12
       experience: 24
     diamond_axe:
-      income: 25
+      income: 0
       points: 12
       experience: 24
     diamond_helmet:
-      income: 25
+      income: 0
       points: 20
       experience: 40
     diamond_chestplate:
-      income: 25
+      income: 0
       points: 32
       experience: 64
     diamond_leggings:
-      income: 25
+      income: 0
       points: 28
       experience: 40
     diamond_boots:
-      income: 25
+      income: 0
       points: 16
       experience: 32
     turtle_helmet:
-      income: 25
+      income: 0
       points: 20
       experience: 40
   Repair:
     wood_sword:
-      income: 25
+      income: 0
       points: 1
       experience: 1
     iron_sword:
-      income: 25
+      income: 0
       points: 2
       experience: 2
     gold_sword:
-      income: 25
+      income: 0
       points: 3
       experience: 3
     diamond_sword:
-      income: 25
+      income: 0
       points: 4
       experience: 4
   Smelt:
     iron_ingot:
-      income: 25
+      income: 0
       points: 1.3
       experience: 2
     gold_ingot:
-      income: 25
+      income: 0
       points: 5
       experience: 10
     diamond:
-      income: 25
+      income: 0
       points: 7
       experience: 20

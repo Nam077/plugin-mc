@@ -90,333 +90,333 @@ Farmer:
     ItemStack: wooden_hoe
   Tame:
     Wolf:
-      income: 15
+      income: 0
       points: 5
       experience: 5
     Horse:
-      income: 15
+      income: 0
       points: 5
       experience: 5
     Parrot:
-      income: 15
+      income: 0
       points: 5
       experience: 5
     Ocelot:
-      income: 15
+      income: 0
       points: 5
       experience: 5
     Llama:
-      income: 15
+      income: 0
       points: 5
       experience: 5
   Breed:
     Horse:
-      income: 15
+      income: 0
       points: 4
       experience: 5
     Sheep:
-      income: 15
+      income: 0
       points: 4
       experience: 5
     Cow:
-      income: 15
+      income: 0
       points: 4
       experience: 5
     mushroom_cow:
-      income: 15
+      income: 0
       points: 4
       experience: 5
     Pig:
-      income: 15
+      income: 0
       points: 4
       experience: 5
     Chicken:
-      income: 15
+      income: 0
       points: 4
       experience: 5
     Wolf:
-      income: 15
+      income: 0
       points: 4
       experience: 5
     Ocelot:
-      income: 15
+      income: 0
       points: 4
       experience: 5
     Rabbit:
-      income: 15
+      income: 0
       points: 4
       experience: 5
     Llama:
-      income: 15
+      income: 0
       points: 4
       experience: 5
     Turtle:
-      income: 15
+      income: 0
       points: 4
       experience: 5
   Shear:
     Red:
-      income: 15
+      income: 0
       points: 4
       experience: 5
     Orange:
-      income: 15
+      income: 0
       points: 4
       experience: 5
     Yellow:
-      income: 15
+      income: 0
       points: 4
       experience: 5
     Green:
-      income: 15
+      income: 0
       points: 4
       experience: 5
     Blue:
-      income: 15
+      income: 0
       points: 4
       experience: 5
     Light_Blue:
-      income: 15
+      income: 0
       points: 4
       experience: 5
     Magenta:
-      income: 15
+      income: 0
       points: 4
       experience: 5
     Pink:
-      income: 15
+      income: 0
       points: 4
       experience: 5
     White:
-      income: 15
+      income: 0
       points: 4
       experience: 5
     Light_Gray:
-      income: 15
+      income: 0
       points: 4
       experience: 5
     Black:
-      income: 15
+      income: 0
       points: 4
       experience: 5
     Brown:
-      income: 15
+      income: 0
       points: 4
       experience: 5
     Purple:
-      income: 15
+      income: 0
       points: 4
       experience: 5
     Cyan:
-      income: 15
+      income: 0
       points: 4
       experience: 5
     Gray:
-      income: 15
+      income: 0
       points: 4
       experience: 5
     Lime:
-      income: 15
+      income: 0
       points: 4
       experience: 5
     mushroom_cow:
-      income: 15
+      income: 0
       points: 4
       experience: 5
   Milk:
     Cow:
-      income: 15
+      income: 0
       points: 5
       experience: 5
   Break:
     chorus_plant:
-      income: 15
+      income: 0
       points: 1.5
       experience: 3
     chorus_flower:
-      income: 15
+      income: 0
       points: 1.5
       experience: 3
     beetroots-3:
-      income: 15
+      income: 0
       points: 1.5
       experience: 3
     wheat-7:
-      income: 15
+      income: 0
       points: 1.5
       experience: 3
     carrots-7:
-      income: 15
+      income: 0
       points: 1
       experience: 1
     potatoes-7:
-      income: 15
+      income: 0
       points: 1
       experience: 1
     pumpkin:
-      income: 15
+      income: 0
       points: 0.5
       experience: 1
     melon:
-      income: 15
+      income: 0
       points: 0.5
       experience: 1
     sugar_cane:
-      income: 15
+      income: 0
       points: 0.2
       experience: 0.2
     cocoa-2:
-      income: 15
+      income: 0
       points: 4
       experience: 4
     oak_sapling:
-      income: 15
+      income: 0
       points: 2
       experience: 2
     spruce_sapling:
-      income: 15
+      income: 0
       points: 2
       experience: 2
     birch_sapling:
-      income: 15
+      income: 0
       points: 2
       experience: 2
     jungle_sapling:
-      income: 15
+      income: 0
       points: 2
       experience: 2
     acacia_sapling:
-      income: 15
+      income: 0
       points: 2
       experience: 2
     dark_oak_sapling:
-      income: 15
+      income: 0
       points: 2
       experience: 2
     lily_pad:
-      income: 15
+      income: 0
       points: 2
       experience: 2
     dandelion:
-      income: 15
+      income: 0
       points: 2
       experience: 2
     poppy:
-      income: 15
+      income: 0
       points: 2
       experience: 2
     blue_orchid:
-      income: 15
+      income: 0
       points: 2
       experience: 2
     allium:
-      income: 15
+      income: 0
       points: 2
       experience: 2
     azure_bluet:
-      income: 15
+      income: 0
       points: 2
       experience: 2
     red_tulip:
-      income: 15
+      income: 0
       points: 2
       experience: 2
     orange_tulip:
-      income: 15
+      income: 0
       points: 2
       experience: 2
     white_tulip:
-      income: 15
+      income: 0
       points: 2
       experience: 2
     pink_tulip:
-      income: 15
+      income: 0
       points: 2
       experience: 2
     oxeye_daisy:
-      income: 15
+      income: 0
       points: 2
       experience: 2
     brown_mushroom:
-      income: 15
+      income: 0
       points: 1
       experience: 1
     red_mushroom:
-      income: 15
+      income: 0
       points: 1
       experience: 1
     vine:
-      income: 15
+      income: 0
       points: 1
       experience: 1
     cactus:
-      income: 15
+      income: 0
       points: 1
       experience: 1
     nether_wart:
-      income: 15
+      income: 0
       points: 1
       experience: 1
   Place:
     wheat:
-      income: 15
+      income: 0
       points: 1
       experience: 1
     potatoes:
-      income: 15
+      income: 0
       points: 1
       experience: 1
     carrots:
-      income: 15
+      income: 0
       points: 1
       experience: 1
     beetroots:
-      income: 15
+      income: 0
       points: 1
       experience: 1
     cocoa:
-      income: 15
+      income: 0
       points: 1
       experience: 1
     sugar_cane:
-      income: 15
+      income: 0
       points: -1
       experience: -1
     pumpkin_stem:
-      income: 15
+      income: 0
       points: 1
       experience: 1
     melon_stem:
-      income: 15
+      income: 0
       points: 1
       experience: 1
   Collect:
     sweet_berries-2:
-      income: 15
+      income: 0
       points: 0.2
       experience: 0.2
     sweet_berries-3:
-      income: 15
+      income: 0
       points: 0.5
       experience: 0.5
     glow_berries:
-      income: 15
+      income: 0
       points: 0.5
       experience: 0.5
     bonemeal:
-      income: 15
+      income: 0
       points: 1.5
       experience: 1.5
     honeybottle:
-      income: 15
+      income: 0
       points: 2.5
       experience: 2.5
     honeycomb:
-      income: 15
+      income: 0
       points: 2.5
       experience: 2.5
   Kill:
     Player:
-      income: 15
+      income: 0
       points: 7.5
       experience: 7.5

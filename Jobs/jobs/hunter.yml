@@ -122,127 +122,127 @@ Hunter:
     ItemStack: bow
   Tame:
     Wolf:
-      income: 20
+      income: 0
       points: 20
       experience: 15
     Ocelot:
-      income: 20
+      income: 0
       points: 20
       experience: 15
     Horse:
-      income: 20
+      income: 0
       points: 20
       experience: 15
   Kill:
     Chicken:
-      income: 20
+      income: 0
       points: 5
       experience: 5
     Cow:
-      income: 20
+      income: 0
       points: 5
       experience: 5
     Pig:
-      income: 20
+      income: 0
       points: 5
       experience: 5
     Sheep:
-      income: 20
+      income: 0
       points: 5
       experience: 5
     Wolf:
-      income: 20
+      income: 0
       points: 10
       experience: 5
     Creeper:
-      income: 20
+      income: 0
       points: 15
       experience: 15
     Skeleton:
-      income: 20
+      income: 0
       points: 10
       experience: 15
     Spider:
-      income: 20
+      income: 0
       points: 10
       experience: 15
     Zombie:
-      income: 20
+      income: 0
       points: 10
       experience: 15
     BLAZE:
-      income: 20
+      income: 0
       points: 20
       experience: 15
     CAVE_SPIDER:
-      income: 20
+      income: 0
       points: 20
       experience: 15
     ENDERMAN:
-      income: 20
+      income: 0
       points: 2
       experience: 2
     GHAST:
-      income: 20
+      income: 0
       points: 30
       experience: 30
     GIANT:
-      income: 20
+      income: 0
       points: 250
       experience: 100
     IRON_GOLEM:
-      income: 20
+      income: 0
       points: 30
       experience: 30
     mushroom_cow:
-      income: 20
+      income: 0
       points: 5
       experience: 5
     SILVERFISH:
-      income: 20
+      income: 0
       points: 3
       experience: 5
     SNOWMAN:
-      income: 20
+      income: 0
       points: 2
       experience: 4
     SQUID:
-      income: 20
+      income: 0
       points: 2
       experience: 2
     RABBIT:
-      income: 20
+      income: 0
       points: 2
       experience: 2
     GUARDIAN:
-      income: 20
+      income: 0
       points: 2
       experience: 2
     SHULKER:
-      income: 20
+      income: 0
       points: 5
       experience: 5
     PHANTOM:
-      income: 20
+      income: 0
       points: 5
       experience: 5
     DROWNED:
-      income: 20
+      income: 0
       points: 5
       experience: 5
     HUSK:
-      income: 20
+      income: 0
       points: 5
       experience: 5
     WITHER:
-      income: 20
+      income: 0
       points: 50
       experience: 120
     ENDER_DRAGON:
-      income: 20
+      income: 0
       points: 2000
       experience: 2000
     Player:
-      income: 20
+      income: 0
       points: 9
       experience: 7.5

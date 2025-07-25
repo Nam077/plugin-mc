@@ -111,7 +111,7 @@ Woodcutter:
       - stripped_dark_oak_log;0.75;0.75;0.25
   Kill:
     Player:
-      income: 14
+      income: 0
       points: 7.5
       experience: 7.5
   custom-kill:

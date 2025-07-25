@@ -75,36 +75,36 @@ Digger:
     ItemStack: wooden_shovel
   Break:
     red_sand:
-      income: 10
+      income: 0
       points: 1
       experience: 1
     coarse_dirt:
-      income: 10
+      income: 0
       points: 1
       experience: 1
     dirt:
-      income: 10
+      income: 0
       points: 0.25
       experience: 0.25
     grass_block:
-      income: 10
+      income: 0
       points: 0.3
       experience: 0.3
     gravel:
-      income: 10
+      income: 0
       points: 1
       experience: 1
     sand:
-      income: 10
+      income: 0
       points: 0.4
       experience: 0.5
     clay:
-      income: 10
+      income: 0
       points: 1
       experience: 1
   Kill:
     Player:
-      income: 10
+      income: 0
       points: 7.5
       experience: 7.5
   custom-kill:
