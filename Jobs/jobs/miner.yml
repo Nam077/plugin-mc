@@ -2,230 +2,284 @@ Miner:
   fullname: Miner
   shortname: M
   FullDescription:
-  - "Earns money mining minerals and ores."
+    - Earns money mining minerals and ores.
   ChatColour: DARK_GRAY
   chat-display: full
   max-level: 200
   leveling-progression-equation: 10*(joblevel)+(joblevel*joblevel*4)
-  income-progression-equation: baseincome+(baseincome*(joblevel-1)*0.01)-((baseincome+(baseincome*(joblevel-1)*0.01))
-    * ((numjobs-1)*0.05))
-  points-progression-equation: basepoints+(basepoints*(joblevel-1)*0.01)-((basepoints+(basepoints*(joblevel-1)*0.01))
-    * ((numjobs-1)*0.05))
+  income-progression-equation: baseincome+(baseincome*(joblevel-1)*0.02)
+  points-progression-equation: basepoints+(basepoints*(joblevel-1)*0.01)-((basepoints+(basepoints*(joblevel-1)*0.01)) * ((numjobs-1)*0.05))
   experience-progression-equation: baseexperience-(baseexperience*((numjobs-1) *0.01))
   rejoinCooldown: 10
-  maxDailyQuests: 1
+  maxDailyQuests: 5
   Quests:
     '1':
-      Name: DarkOne
+      Name: Cave Explorer
       Objectives:
-      - Break;stone;50
-      - Break;granite;50
-      - Break;sandstone;50
+        - Break;stone;80
+        - Break;coal_ore;12
+        - Break;iron_ore;8
+        - Break;deepslate;30
       RewardCommands:
-      - eco give [playerName] 100
-      - msg [playerName] Completed quest!
+        - eco give [playerName] 180
+        - msg [playerName] &aCompleted Cave Explorer quest! &6+180 coins
       RewardDesc:
-      - Break blocks and get money
-      - Get 100 for this!
+        - Requires actual cave mining
+        - Get 180 coins for this!
+    '2':
+      Name: Ore Specialist
+      Objectives:
+        - Break;iron_ore;15
+        - Break;coal_ore;20
+        - Break;copper_ore;12
+        - Break;gold_ore;6
+        - Break;lapis_ore;4
+      RewardCommands:
+        - eco give [playerName] 300
+        - msg [playerName] &aCompleted Ore Specialist quest! &6+300 coins
+      RewardDesc:
+        - Must find various ores naturally
+        - Get 300 coins for this!
+    '3':
+      Name: Deep Miner
+      Objectives:
+        - Break;deepslate;100
+        - Break;deepslate_iron_ore;10
+        - Break;deepslate_coal_ore;15
+        - Break;stone;50
+      RewardCommands:
+        - eco give [playerName] 250
+        - msg [playerName] &aCompleted Deep Miner quest! &6+250 coins
+      RewardDesc:
+        - Deep underground mining required
+        - Get 250 coins for this!
+    '4':
+      Name: Precious Hunter
+      Objectives:
+        - Break;diamond_ore;3
+        - Break;emerald_ore;2
+        - Break;deepslate_diamond_ore;2
+        - Break;gold_ore;8
+        - Break;iron_ore;20
+      RewardCommands:
+        - eco give [playerName] 600
+        - msg [playerName] &aCompleted Precious Hunter quest! &6+600 coins
+      RewardDesc:
+        - Rare ore hunting - no automation possible
+        - Get 600 coins for this!
+    '5':
+      Name: Master Excavator
+      Objectives:
+        - Break;stone;150
+        - Break;deepslate;80
+        - Break;iron_ore;25
+        - Break;coal_ore;30
+        - Break;diamond_ore;4
+      RewardCommands:
+        - eco give [playerName] 800
+        - msg [playerName] &aCompleted Master Excavator quest! &6+800 coins
+      RewardDesc:
+        - Massive mining operation
+        - Get 800 coins for this!
   Gui:
     ItemStack: wooden_pickaxe
   TNTBreak:
     stone:
-      income: 0.25
+      income: 0
       points: 0.25
       experience: 0.5
     granite:
-      income: 0.25
+      income: 0
       points: 0.25
       experience: 0.5
     diorite:
-      income: 0.25
+      income: 0
       points: 0.25
       experience: 0.5
     andesite:
-      income: 0.25
+      income: 0
       points: 0.25
       experience: 0.5
   Break:
     andesite:
-      income: 1
+      income: 18
       points: 1
       experience: 1
     stone:
-      income: 1
+      income: 18
       points: 1
       experience: 1
     deepslate:
-      income: 1.25
+      income: 18
       points: 1.25
       experience: 1.25
     granite:
-      income: 1
+      income: 18
       points: 1
       experience: 1
     diorite:
-      income: 1
+      income: 18
       points: 1
       experience: 1
     sandstone:
-      income: 0.15
+      income: 18
       points: 0.15
       experience: 0.2
     chiseled_sandstone:
-      income: 0.15
+      income: 18
       points: 0.15
       experience: 0.2
     cut_sandstone:
-      income: 0.15
+      income: 18
       points: 0.15
       experience: 0.2
     coal_ore:
-      income: 3
+      income: 18
       points: 2
       experience: 2
     deepslate_coal_ore:
-      income: 4
+      income: 18
       points: 3
       experience: 3
     redstone_ore:
-      income: 2.5
+      income: 18
       points: 2
       experience: 2
     deepslate_redstone_ore:
-      income: 3.5
+      income: 18
       points: 3
       experience: 3
     copper_ore:
-      income: 3.5
+      income: 18
       points: 3
       experience: 2
     deepslate_copper_ore:
-      income: 4.5
+      income: 18
       points: 4
       experience: 3
     iron_ore:
-      income: 3.5
+      income: 18
       points: 3
       experience: 2
     deepslate_iron_ore:
-      income: 4.5
+      income: 18
       points: 4
       experience: 3
     gold_ore:
-      income: 5
+      income: 18
       points: 4
       experience: 2
     deepslate_gold_ore:
-      income: 6
+      income: 18
       points: 5
       experience: 3
     lapis_ore:
-      income: 7.5
+      income: 18
       points: 6
       experience: 2
     deepslate_lapis_ore:
-      income: 8.5
+      income: 18
       points: 7
       experience: 3
     diamond_ore:
-      income: 10
+      income: 18
       points: 10
       experience: 10
     deepslate_diamond_ore:
-      income: 12.5
+      income: 18
       points: 12.5
       experience: 12.5
     emerald_ore:
-      income: 15
+      income: 18
       points: 15
       experience: 30
     deepslate_emerald_ore:
-      income: 17.5
+      income: 18
       points: 17.5
       experience: 35
     nether_quartz_ore:
-      income: 2.5
+      income: 18
       points: 2.5
       experience: 2.5
     obsidian:
-      income: 5
+      income: 18
       points: 5
       experience: 5
     cobblestone_wall:
-      income: 2.5
+      income: 18
       points: 2.5
       experience: 2.5
     mossy_cobblestone_wall:
-      income: 2.5
+      income: 18
       points: 2.5
       experience: 2.5
     nether_bricks:
-      income: 1.0
+      income: 18
       points: 1
-      experience: 1.0
+      experience: 1
     nether_brick_stairs:
-      income: 3
+      income: 18
       points: 3
       experience: 3
     nether_brick_fence:
-      income: 1
+      income: 18
       points: 1
       experience: 1
     netherrack:
-      income: 0.1
+      income: 18
       points: 0.1
       experience: 0.1
     prismarine:
-      income: 2.5
+      income: 18
       points: 2.5
       experience: 2.5
     prismarine_bricks:
-      income: 2.5
+      income: 18
       points: 2.5
       experience: 2.5
     dark_prismarine:
-      income: 2.5
+      income: 18
       points: 2.5
       experience: 2.5
   Place:
     rail:
-      income: 2.0
-      points: 2.0
-      experience: 2.0
+      income: 18
+      points: 2
+      experience: 2
     iron_ore:
-      income: -5.0
+      income: 18
       points: -5
-      experience: -5.0
+      experience: -5
     deepslate_iron_ore:
-      income: -5.0
+      income: 18
       points: -5
-      experience: -5.0
+      experience: -5
     gold_ore:
-      income: -6.0
+      income: 18
       points: -6
-      experience: -6.0
+      experience: -6
     deepslate_gold_ore:
-      income: -6.0
+      income: 18
       points: -6
-      experience: -6.0
+      experience: -6
     diamond_ore:
-      income: -10.0
+      income: 18
       points: -10
-      experience: -10.0
+      experience: -10
     deepslate_diamond_ore:
-      income: -12.5
+      income: 18
       points: -12.5
       experience: -12.5
     emerald_ore:
-      income: -15
+      income: 18
       points: -15
       experience: -30
     deepslate_emerald_ore:
-      income: -17.5
+      income: 18
       points: -17.5
       experience: -35
   Kill:
     Player:
-      income: 7.5
+      income: 18
       points: 7.5
       experience: 7.5

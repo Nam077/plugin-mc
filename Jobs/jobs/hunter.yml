@@ -2,156 +2,247 @@ Hunter:
   fullname: Hunter
   shortname: H
   FullDescription:
-  - "Earns money killing animals and monsters."
+    - Earns money killing animals and monsters.
   ChatColour: RED
   chat-display: full
   max-level: 200
   leveling-progression-equation: 10*(joblevel)+(joblevel*joblevel*4)
-  income-progression-equation: baseincome+(baseincome*(joblevel-1)*0.01)-((baseincome+(baseincome*(joblevel-1)*0.01))
-    * ((numjobs-1)*0.05))
-  points-progression-equation: basepoints+(basepoints*(joblevel-1)*0.01)-((basepoints+(basepoints*(joblevel-1)*0.01))
-    * ((numjobs-1)*0.05))
+  income-progression-equation: baseincome+(baseincome*(joblevel-1)*0.02)
+  points-progression-equation: basepoints+(basepoints*(joblevel-1)*0.01)-((basepoints+(basepoints*(joblevel-1)*0.01)) * ((numjobs-1)*0.05))
   experience-progression-equation: baseexperience-(baseexperience*((numjobs-1) *0.01))
   rejoinCooldown: 10
-  maxDailyQuests: 1
+  maxDailyQuests: 9
   Quests:
     '1':
-      Name: Predator
+      Name: Monster Slayer
       Objectives:
-      - Kill;Wolf;10
-      - Kill;Creeper;3
-      - Kill;Skeleton;10
+        - Kill;ZOMBIE;15
+        - Kill;SKELETON;10
+        - Kill;SPIDER;12
       RewardCommands:
-      - eco give [playerName] 100
-      - msg [playerName] Completed quest!
+        - eco give [playerName] 360
+        - msg [playerName] &aCompleted Monster Slayer quest! &6+360 coins
       RewardDesc:
-      - Kill everything what moves and get money
-      - Get 100 for this!
+        - Hunt common monsters
+        - Get 360 coins for this!
+    '2':
+      Name: Beast Hunter
+      Objectives:
+        - Kill;CREEPER;8
+        - Kill;ENDERMAN;5
+        - Kill;WITCH;3
+      RewardCommands:
+        - eco give [playerName] 500
+        - msg [playerName] &aCompleted Beast Hunter quest! &6+500 coins
+      RewardDesc:
+        - Hunt dangerous beasts
+        - Get 500 coins for this!
+    '3':
+      Name: Boss Fighter
+      Objectives:
+        - Kill;BLAZE;5
+        - Kill;WITHER_SKELETON;3
+      RewardCommands:
+        - eco give [playerName] 800
+        - msg [playerName] &aCompleted Boss Fighter quest! &6+800 coins
+      RewardDesc:
+        - Fight powerful bosses
+        - Get 800 coins for this!
+    '4':
+      Name: Farm Animal Hunter
+      Objectives:
+        - Kill;Cow;20
+        - Kill;Pig;15
+        - Kill;Chicken;25
+        - Kill;Sheep;18
+      RewardCommands:
+        - eco give [playerName] 240
+        - msg [playerName] &aCompleted Farm Animal Hunter quest! &6+240 coins
+      RewardDesc:
+        - Hunt farm animals for food
+        - Get 240 coins for this!
+    '5':
+      Name: Ocean Hunter
+      Objectives:
+        - Kill;SQUID;15
+        - Kill;GUARDIAN;8
+        - Kill;DROWNED;10
+      RewardCommands:
+        - eco give [playerName] 400
+        - msg [playerName] &aCompleted Ocean Hunter quest! &6+400 coins
+      RewardDesc:
+        - Hunt sea creatures
+        - Get 400 coins for this!
+    '6':
+      Name: Nether Hunter
+      Objectives:
+        - Kill;GHAST;3
+        - Kill;BLAZE;8
+        - Kill;WITHER_SKELETON;5
+      RewardCommands:
+        - eco give [playerName] 700
+        - msg [playerName] &aCompleted Nether Hunter quest! &6+700 coins
+      RewardDesc:
+        - Hunt dangerous nether mobs
+        - Get 700 coins for this!
+    '7':
+      Name: Ultimate Hunter
+      Objectives:
+        - Kill;WITHER;1
+        - Kill;ENDER_DRAGON;1
+      RewardCommands:
+        - eco give [playerName] 2000
+        - msg [playerName] &aCompleted Ultimate Hunter quest! &6+2000 coins
+      RewardDesc:
+        - Hunt the most powerful bosses
+        - Get 2000 coins for this!
+    '8':
+      Name: Pest Control
+      Objectives:
+        - Kill;SILVERFISH;30
+        - Kill;CAVE_SPIDER;20
+        - Kill;PHANTOM;10
+      RewardCommands:
+        - eco give [playerName] 320
+        - msg [playerName] &aCompleted Pest Control quest! &6+320 coins
+      RewardDesc:
+        - Clean up annoying pests
+        - Get 320 coins for this!
+    '9':
+      Name: PvP Warrior
+      Objectives:
+        - Kill;Player;5
+      RewardCommands:
+        - eco give [playerName] 600
+        - msg [playerName] &aCompleted PvP Warrior quest! &6+600 coins
+      RewardDesc:
+        - Defeat other players in combat
+        - Get 600 coins for this!
   Gui:
     ItemStack: bow
   Tame:
     Wolf:
-      income: 20.0
+      income: 20
       points: 20
-      experience: 15.0
+      experience: 15
     Ocelot:
-      income: 20.0
+      income: 20
       points: 20
-      experience: 15.0
+      experience: 15
     Horse:
-      income: 20.0
+      income: 20
       points: 20
-      experience: 15.0
+      experience: 15
   Kill:
     Chicken:
-      income: 5.0
+      income: 20
       points: 5
-      experience: 5.0
+      experience: 5
     Cow:
-      income: 6.0
+      income: 20
       points: 5
-      experience: 5.0
+      experience: 5
     Pig:
-      income: 5.0
+      income: 20
       points: 5
-      experience: 5.0
+      experience: 5
     Sheep:
-      income: 5.0
+      income: 20
       points: 5
-      experience: 5.0
+      experience: 5
     Wolf:
-      income: 10.0
+      income: 20
       points: 10
-      experience: 5.0
+      experience: 5
     Creeper:
-      income: 15.0
+      income: 20
       points: 15
-      experience: 15.0
+      experience: 15
     Skeleton:
-      income: 10.0
+      income: 20
       points: 10
-      experience: 15.0
+      experience: 15
     Spider:
-      income: 10.0
+      income: 20
       points: 10
-      experience: 15.0
+      experience: 15
     Zombie:
-      income: 10.0
+      income: 20
       points: 10
-      experience: 15.0
+      experience: 15
     BLAZE:
-      income: 20.0
+      income: 20
       points: 20
-      experience: 15.0
+      experience: 15
     CAVE_SPIDER:
-      income: 20.0
+      income: 20
       points: 20
-      experience: 15.0
+      experience: 15
     ENDERMAN:
-      income: 2.0
+      income: 20
       points: 2
-      experience: 2.0
+      experience: 2
     GHAST:
-      income: 30.0
+      income: 20
       points: 30
-      experience: 30.0
+      experience: 30
     GIANT:
-      income: 250.0
+      income: 20
       points: 250
-      experience: 100.0
+      experience: 100
     IRON_GOLEM:
-      income: 30.0
+      income: 20
       points: 30
-      experience: 30.0
+      experience: 30
     mushroom_cow:
-      income: 5.0
+      income: 20
       points: 5
-      experience: 5.0
+      experience: 5
     SILVERFISH:
-      income: 3.0
+      income: 20
       points: 3
-      experience: 5.0
+      experience: 5
     SNOWMAN:
-      income: 2.0
+      income: 20
       points: 2
-      experience: 4.0
+      experience: 4
     SQUID:
-      income: 2.0
+      income: 20
       points: 2
-      experience: 2.0
+      experience: 2
     RABBIT:
-      income: 2.0
+      income: 20
       points: 2
-      experience: 2.0
+      experience: 2
     GUARDIAN:
-      income: 2.0
+      income: 20
       points: 2
-      experience: 2.0
+      experience: 2
     SHULKER:
-      income: 5.0
+      income: 20
       points: 5
-      experience: 5.0
+      experience: 5
     PHANTOM:
-      income: 5.0
+      income: 20
       points: 5
-      experience: 5.0
+      experience: 5
     DROWNED:
-      income: 5.0
+      income: 20
       points: 5
-      experience: 5.0
+      experience: 5
     HUSK:
-      income: 5.0
+      income: 20
       points: 5
-      experience: 5.0
+      experience: 5
     WITHER:
-      income: 50.0
+      income: 20
       points: 50
-      experience: 120.0
+      experience: 120
     ENDER_DRAGON:
-      income: 2000.0
+      income: 20
       points: 2000
-      experience: 2000.0
+      experience: 2000
     Player:
-      income: 9.0
+      income: 20
       points: 9
       experience: 7.5

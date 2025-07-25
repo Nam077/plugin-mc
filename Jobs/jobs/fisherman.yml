@@ -2,52 +2,94 @@ Fisherman:
   fullname: Fisherman
   shortname: Fi
   FullDescription:
-  - "Earns money from fishing."
+    - Earns money from fishing.
   ChatColour: AQUA
   chat-display: full
   max-level: 200
   leveling-progression-equation: 10*(joblevel)+(joblevel*joblevel*4)
-  income-progression-equation: baseincome+(baseincome*(joblevel-1)*0.01)-((baseincome+(baseincome*(joblevel-1)*0.01))
-    * ((numjobs-1)*0.05))
-  points-progression-equation: basepoints+(basepoints*(joblevel-1)*0.01)-((basepoints+(basepoints*(joblevel-1)*0.01))
-    * ((numjobs-1)*0.05))
+  income-progression-equation: baseincome+(baseincome*(joblevel-1)*0.02)
+  points-progression-equation: basepoints+(basepoints*(joblevel-1)*0.01)-((basepoints+(basepoints*(joblevel-1)*0.01)) * ((numjobs-1)*0.05))
   experience-progression-equation: baseexperience-(baseexperience*((numjobs-1) *0.01))
   rejoinCooldown: 10
-  maxDailyQuests: 1
+  maxDailyQuests: 5
   Quests:
     '1':
-      Name: Catcher
+      Name: Casual Fisher
       Objectives:
-      - Fish;cod;2
-      - Fish;salmon;2
-      - Fish;tropical_fish;2
+        - Fish;COD;20
+        - Fish;SALMON;15
       RewardCommands:
-      - eco give [playerName] 100
-      - msg [playerName] Completed quest!
+        - eco give [playerName] 200
+        - msg [playerName] &aCompleted Casual Fisher quest! &6+200 coins
       RewardDesc:
-      - Catch fish and get money
-      - Get 100 for this!
+        - Catch common fish
+        - Get 200 coins for this!
+    '2':
+      Name: Deep Sea Fisher
+      Objectives:
+        - Fish;PUFFERFISH;5
+        - Fish;TROPICAL_FISH;10
+      RewardCommands:
+        - eco give [playerName] 360
+        - msg [playerName] &aCompleted Deep Sea Fisher quest! &6+360 coins
+      RewardDesc:
+        - Catch exotic fish
+        - Get 360 coins for this!
+    '3':
+      Name: Treasure Hunter
+      Objectives:
+        - Fish;ENCHANTED_BOOK;2
+        - Fish;NAME_TAG;1
+      RewardCommands:
+        - eco give [playerName] 600
+        - msg [playerName] &aCompleted Treasure Hunter quest! &6+600 coins
+      RewardDesc:
+        - Fish for treasures
+        - Get 600 coins for this!
+    '4':
+      Name: Professional Angler
+      Objectives:
+        - Fish;COD;50
+        - Fish;SALMON;30
+      RewardCommands:
+        - eco give [playerName] 500
+        - msg [playerName] &aCompleted Professional Angler quest! &6+500 coins
+      RewardDesc:
+        - Master the art of fishing
+        - Get 500 coins for this!
+    '5':
+      Name: Ocean Master
+      Objectives:
+        - Fish;COD;100
+        - Fish;SALMON;50
+        - Fish;PUFFERFISH;10
+      RewardCommands:
+        - eco give [playerName] 800
+        - msg [playerName] &aCompleted Ocean Master quest! &6+800 coins
+      RewardDesc:
+        - Dominate the oceans
+        - Get 800 coins for this!
   Gui:
     ItemStack: fishing_rod
   Fish:
     cod:
-      income: 15.0
-      points: 15.0
-      experience: 15.0
+      income: 16
+      points: 15
+      experience: 15
     salmon:
-      income: 20.0
-      points: 20.0
-      experience: 25.0
+      income: 16
+      points: 20
+      experience: 25
     tropical_fish:
-      income: 25.0
-      points: 25.0
-      experience: 25.0
+      income: 16
+      points: 25
+      experience: 25
     pufferfish:
-      income: 25.0
-      points: 25.0
-      experience: 25.0
+      income: 16
+      points: 25
+      experience: 25
   Kill:
     Player:
-      income: 7.5
+      income: 16
       points: 7.5
       experience: 7.5

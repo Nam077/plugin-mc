@@ -2,66 +2,111 @@ Explorer:
   fullname: Explorer
   shortname: Ex
   FullDescription:
-  - "Earns money from exploring map."
+    - Earns money from exploring map.
   ChatColour: AQUA
   chat-display: full
   max-level: 200
   leveling-progression-equation: 10*(joblevel)+(joblevel*joblevel*4)
-  income-progression-equation: baseincome+(baseincome*(joblevel-1)*0.01)-((baseincome+(baseincome*(joblevel-1)*0.01))
-    * ((numjobs-1)*0.05))
-  points-progression-equation: basepoints+(basepoints*(joblevel-1)*0.01)-((basepoints+(basepoints*(joblevel-1)*0.01))
-    * ((numjobs-1)*0.05))
+  income-progression-equation: baseincome+(baseincome*(joblevel-1)*0.02)
+  points-progression-equation: basepoints+(basepoints*(joblevel-1)*0.01)-((basepoints+(basepoints*(joblevel-1)*0.01)) * ((numjobs-1)*0.05))
   experience-progression-equation: baseexperience-(baseexperience*((numjobs-1) *0.01))
   rejoinCooldown: 10
-  maxDailyQuests: 1
+  maxDailyQuests: 5
   Quests:
     '1':
-      Name: Galileo
+      Name: Local Explorer
       Objectives:
-      - Explore;1;30
+        - Explore;FOREST;10
+        - Explore;PLAINS;15
+        - Explore;HILLS;8
       RewardCommands:
-      - eco give [playerName] 100
-      - msg [playerName] Completed quest!
+        - eco give [playerName] 200
+        - msg [playerName] &aCompleted Local Explorer quest! &6+200 coins
       RewardDesc:
-      - Go on a trip and get money
-      - Get 100 for this!
+        - Explore nearby areas
+        - Get 200 coins for this!
+    '2':
+      Name: Biome Hunter
+      Objectives:
+        - Explore;DESERT;5
+        - Explore;JUNGLE;3
+        - Explore;SWAMP;4
+      RewardCommands:
+        - eco give [playerName] 360
+        - msg [playerName] &aCompleted Biome Hunter quest! &6+360 coins
+      RewardDesc:
+        - Discover different biomes
+        - Get 360 coins for this!
+    '3':
+      Name: Cave Explorer
+      Objectives:
+        - Explore;CAVES;20
+      RewardCommands:
+        - eco give [playerName] 300
+        - msg [playerName] &aCompleted Cave Explorer quest! &6+300 coins
+      RewardDesc:
+        - Explore underground caves
+        - Get 300 coins for this!
+    '4':
+      Name: Ocean Explorer
+      Objectives:
+        - Explore;OCEAN;15
+        - Explore;BEACH;10
+      RewardCommands:
+        - eco give [playerName] 400
+        - msg [playerName] &aCompleted Ocean Explorer quest! &6+400 coins
+      RewardDesc:
+        - Explore water biomes
+        - Get 400 coins for this!
+    '5':
+      Name: Adventurer
+      Objectives:
+        - Explore;MOUNTAINS;5
+        - Explore;BADLANDS;3
+        - Explore;SAVANNA;7
+      RewardCommands:
+        - eco give [playerName] 600
+        - msg [playerName] &aCompleted Adventurer quest! &6+600 coins
+      RewardDesc:
+        - Go on great adventures
+        - Get 600 coins for this!
   Gui:
     ItemStack: leather_boots
   Explore:
     '1':
-      income: 5.0
+      income: 0
       points: 5
-      experience: 5.0
+      experience: 5
     '2':
-      income: 2.5
+      income: 0
       points: 2.5
       experience: 2.5
     '3':
-      income: 1.0
-      points: 1.0
-      experience: 1.0
+      income: 0
+      points: 1
+      experience: 1
     '4':
-      income: 0.5
+      income: 0
       points: 0.5
       experience: 0.5
     '5':
-      income: 0.1
+      income: 0
       points: 0.1
-      experience: 0.1  
+      experience: 0.1
   Brush:
-    'suspicious_sand':
-      income: 5
+    suspicious_sand:
+      income: 0
       points: 5
       experience: 5
-    'suspicious_gravel':
-      income: 6
+    suspicious_gravel:
+      income: 0
       points: 6
       experience: 6
     coal:
-      income: 10
+      income: 0
       points: 10
-      experience: 10   
+      experience: 10
   Kill:
     Player:
-      income: 7.5
+      income: 20
       experience: 7.5

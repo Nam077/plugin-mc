@@ -2,54 +2,120 @@ Woodcutter:
   fullname: Woodcutter
   shortname: W
   FullDescription:
-  - "Earns money felling and planting trees"
+    - Earns money felling and planting trees
   ChatColour: GREEN
   chat-display: full
   max-level: 200
   leveling-progression-equation: 10*(joblevel)+(joblevel*joblevel*4)
-  income-progression-equation: baseincome+(baseincome*(joblevel-1)*0.01)-((baseincome+(baseincome*(joblevel-1)*0.01))
-    * ((numjobs-1)*0.05))
-  points-progression-equation: basepoints+(basepoints*(joblevel-1)*0.01)-((basepoints+(basepoints*(joblevel-1)*0.01))
-    * ((numjobs-1)*0.05))
+  income-progression-equation: baseincome+(baseincome*(joblevel-1)*0.02)
+  points-progression-equation: basepoints+(basepoints*(joblevel-1)*0.01)-((basepoints+(basepoints*(joblevel-1)*0.01)) * ((numjobs-1)*0.05))
   experience-progression-equation: baseexperience-(baseexperience*((numjobs-1) *0.01))
   rejoinCooldown: 10
-  maxDailyQuests: 1
+  maxDailyQuests: 7
   Quests:
     '1':
-      Name: Woodpecker
+      Name: Lumberjack
       Objectives:
-      - Break;oak_log;50
-      - Break;birch_log;50
-      - Break;jungle_log;50
+        - Break;oak_log;50
+        - Break;birch_log;30
+        - Break;spruce_log;40
       RewardCommands:
-      - eco give [playerName] 100
-      - msg [playerName] Completed quest!
+        - eco give [playerName] 240
+        - msg [playerName] &aCompleted Lumberjack quest! &6+240 coins
       RewardDesc:
-      - Break logs and get money
-      - Get 100 for this!
+        - Cut down common trees
+        - Get 240 coins for this!
+    '2':
+      Name: Forest Cleaner
+      Objectives:
+        - Break;jungle_log;25
+        - Break;acacia_log;20
+        - Break;dark_oak_log;15
+      RewardCommands:
+        - eco give [playerName] 320
+        - msg [playerName] &aCompleted Forest Cleaner quest! &6+320 coins
+      RewardDesc:
+        - Clear rare wood types
+        - Get 320 coins for this!
+    '3':
+      Name: Cherry Collector
+      Objectives:
+        - Break;cherry_log;30
+        - Break;cherry_leaves;100
+      RewardCommands:
+        - eco give [playerName] 400
+        - msg [playerName] &aCompleted Cherry Collector quest! &6+400 coins
+      RewardDesc:
+        - Harvest beautiful cherry wood
+        - Get 400 coins for this!
+    '4':
+      Name: Mangrove Harvester
+      Objectives:
+        - Break;mangrove_log;40
+      RewardCommands:
+        - eco give [playerName] 360
+        - msg [playerName] &aCompleted Mangrove Harvester quest! &6+360 coins
+      RewardDesc:
+        - Work in swampy conditions
+        - Get 360 coins for this!
+    '5':
+      Name: Bamboo Farmer
+      Objectives:
+        - Break;bamboo;200
+      RewardCommands:
+        - eco give [playerName] 300
+        - msg [playerName] &aCompleted Bamboo Farmer quest! &6+300 coins
+      RewardDesc:
+        - Harvest fast-growing bamboo
+        - Get 300 coins for this!
+    '6':
+      Name: Leaf Cleaner
+      Objectives:
+        - Break;oak_leaves;200
+        - Break;birch_leaves;150
+        - Break;spruce_leaves;100
+      RewardCommands:
+        - eco give [playerName] 200
+        - msg [playerName] &aCompleted Leaf Cleaner quest! &6+200 coins
+      RewardDesc:
+        - Clean up fallen leaves
+        - Get 200 coins for this!
+    '7':
+      Name: Master Woodcutter
+      Objectives:
+        - Break;oak_log;100
+        - Break;birch_log;100
+        - Break;spruce_log;100
+        - Break;jungle_log;50
+      RewardCommands:
+        - eco give [playerName] 800
+        - msg [playerName] &aCompleted Master Woodcutter quest! &6+800 coins
+      RewardDesc:
+        - Master all wood types
+        - Get 800 coins for this!
   Gui:
     ItemStack: birch_log
   Break:
     materials:
-    - oak_log;1.0;1.0;1.0
-    - spruce_log;1.0;1.0;1.0
-    - birch_log;1.0;1.0;1.0
-    - jungle_log;1.0;1.0;1.0
-    - acacia_log;1.0;1.0;1.0
-    - dark_oak_log;1.0;1.0;1.0
-    - stripped_oak_log;0.75;0.75;0.25
-    - stripped_spruce_log;0.75;0.75;0.25
-    - stripped_birch_log;0.75;0.75;0.25
-    - stripped_jungle_log;0.75;0.75;0.25
-    - stripped_acacia_log;0.75;0.75;0.25
-    - stripped_dark_oak_log;0.75;0.75;0.25
+      - oak_log;1.0;1.0;1.0
+      - spruce_log;1.0;1.0;1.0
+      - birch_log;1.0;1.0;1.0
+      - jungle_log;1.0;1.0;1.0
+      - acacia_log;1.0;1.0;1.0
+      - dark_oak_log;1.0;1.0;1.0
+      - stripped_oak_log;0.75;0.75;0.25
+      - stripped_spruce_log;0.75;0.75;0.25
+      - stripped_birch_log;0.75;0.75;0.25
+      - stripped_jungle_log;0.75;0.75;0.25
+      - stripped_acacia_log;0.75;0.75;0.25
+      - stripped_dark_oak_log;0.75;0.75;0.25
   Kill:
     Player:
-      income: 7.5
+      income: 14
       points: 7.5
       experience: 7.5
   custom-kill:
     Woodcutter:
-      income: 10.0
-      points: 10.0
-      experience: 10.0
+      income: 0
+      points: 10
+      experience: 10
