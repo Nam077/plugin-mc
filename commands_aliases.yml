@@ -1,0 +1,28 @@
+# Thêm vào commands.yml trong thư mục root của server
+
+aliases:
+  # Lệnh approve người chơi nhanh
+  approve:
+    - "lp user $1 parent remove pending"
+    - "lp user $1 parent add approved" 
+    - "gamemode survival $1"
+    - "msg $1 &a[SERVER] Chúc mừng! Bạn đã được chấp nhận vào server!"
+    - "broadcast &e[ADMIN] &a$1 &eđã được chấp nhận vào server!"
+  
+  # Lệnh reject người chơi nhanh  
+  reject:
+    - "kick $1 &cXin lỗi, bạn chưa được chấp nhận vào server này. Vui lòng liên hệ admin."
+  
+  # Xem danh sách pending
+  pending:
+    - "lp group pending listmembers"
+  
+  # Xem info người chơi
+  checkplayer:
+    - "lp user $1 info"
+
+# Cách sử dụng:
+# /approve Nam077
+# /reject BadPlayer  
+# /pending
+# /checkplayer Nam077

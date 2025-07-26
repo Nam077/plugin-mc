@@ -1,0 +1,54 @@
+# ===== SETUP HỆ THỐNG APPROVAL CHỈ BẰNG LUCKPERMS =====
+
+/lp creategroup pending
+
+/lp creategroup approved
+
+/lp group default parent remove default
+/lp group default parent add pending
+
+/lp group pending permission set minecraft.command.gamemode false
+/lp group pending permission set essentials.gamemode false
+/lp group pending permission set essentials.survival false
+/lp group pending permission set essentials.creative false
+/lp group pending permission set essentials.build false
+/lp group pending permission set essentials.interact false
+
+/lp group approved permission set essentials.survival true
+/lp group approved permission set essentials.gamemode.survival true
+/lp group approved permission set essentials.build true
+/lp group approved permission set essentials.interact true
+/lp group approved permission set essentials.spawn true
+/lp group approved permission set essentials.home true
+/lp group approved permission set essentials.sethome true
+
+/lp group admin permission set luckperms.user.parent.add true
+/lp group admin permission set luckperms.user.parent.remove true
+/lp group admin permission set essentials.gamemode.others true
+
+# ===== COMMANDS ĐỂ SỬ DỤNG HÀNG NGÀY =====
+
+# Xem danh sách người chơi đang chờ duyệt:
+/lp group pending listmembers
+
+# Approve một người chơi (chạy 3 lệnh này):
+/lp user <tên_người_chơi> parent remove pending
+/lp user <tên_người_chơi> parent add approved  
+/gamemode survival <tên_người_chơi>
+
+# Reject một người chơi:
+/kick <tên_người_chơi> Bạn chưa được chấp nhận vào server
+
+# Kiểm tra group của một người chơi:
+/lp user <tên_người_chơi> info
+
+# ===== VÍ DỤ SỬ DỤNG =====
+
+# Approve người chơi tên "Nam077":
+/lp user Nam077 parent remove pending
+/lp user Nam077 parent add approved
+/gamemode survival Nam077
+/msg Nam077 &aChúc mừng! Bạn đã được chấp nhận vào server!
+
+# Reject người chơi tên "BadPlayer":
+/kick BadPlayer Xin lỗi, bạn chưa đáp ứng yêu cầu để vào server này
