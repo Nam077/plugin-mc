@@ -100,8 +100,8 @@ command:
       finalExplanation: ' &eKhông bao gồm phần thưởng/phạt thú cưng và gần sinh quái'
   convert:
     help:
-      info: Chuyển đổi hệ thống cơ sở dữ liệu từ hệ thống này sang hệ thống khác. Nếu bạn đang
-        chạy SQLite, điều này sẽ chuyển đổi nó sang MySQL và ngược lại.
+      info: Chuyển đổi hệ thống cơ sở dữ liệu từ hệ thống này sang hệ thống khác.
+        Nếu bạn đang chạy SQLite, điều này sẽ chuyển đổi nó sang MySQL và ngược lại.
       args: ''
   limit:
     help:
@@ -115,13 +115,16 @@ command:
       pointstime: '&eThời gian còn lại đến khi đặt lại giới hạn Điểm: &2%time%'
       pointsLimit: '&eGiới hạn Điểm: &2%current%&e/&2%total%'
       reachedmoneylimit: '&4Bạn đã đạt giới hạn tiền trong thời gian đã cho!'
-      reachedmoneylimit2: '&eBạn có thể kiểm tra giới hạn của mình bằng lệnh &2/jobs limit &e'
-      reachedmoneylimit3: '&eTiền kiếm được hiện đang giảm theo cấp số nhân... Nhưng bạn
-        vẫn kiếm được một chút!'
+      reachedmoneylimit2: '&eBạn có thể kiểm tra giới hạn của mình bằng lệnh &2/jobs
+        limit &e'
+      reachedmoneylimit3: '&eTiền kiếm được hiện đang giảm theo cấp số nhân... Nhưng
+        bạn vẫn kiếm được một chút!'
       reachedexplimit: '&4Bạn đã đạt giới hạn exp trong thời gian đã cho!'
-      reachedexplimit2: '&eBạn có thể kiểm tra giới hạn của mình bằng lệnh &2/jobs limit &e'
+      reachedexplimit2: '&eBạn có thể kiểm tra giới hạn của mình bằng lệnh &2/jobs
+        limit &e'
       reachedpointslimit: '&4Bạn đã đạt giới hạn exp trong thời gian đã cho!'
-      reachedpointslimit2: '&eBạn có thể kiểm tra giới hạn của mình bằng lệnh &2/jobs limit &e'
+      reachedpointslimit2: '&eBạn có thể kiểm tra giới hạn của mình bằng lệnh &2/jobs
+        limit &e'
       notenabled: '&eGiới hạn tiền không được kích hoạt'
   resetexploreregion:
     help:
@@ -162,7 +165,8 @@ command:
       args: set/add/take [playername] [amount]
     output:
       set: '&eDiểm của người chơi (&6%playerdisplayname%&e) đã được đặt thành &6%amount%'
-      add: '&eNgười chơi (&6%playerdisplayname%&e) đã nhận &6%amount% &ediểm. Số dư &6%total%'
+      add: '&eNgười chơi (&6%playerdisplayname%&e) đã nhận &6%amount% &ediểm. Số dư
+        &6%total%'
       take: '&eNgười chơi (&6%playerdisplayname%&e) đã mất &6%amount% &ediểm. Số dư
         &6%total%'
   editjobs:
@@ -271,8 +275,8 @@ command:
       cantOpen: '&cKhông thể mở trang này'
       NoPermForItem: '&cBạn không có quyền cần thiết cho vật phẩm này!'
       NoPermToBuy: '&cKhông có quyền mua vật phẩm này'
-      NoJobReqForitem: '&cBạn không có nghề yêu cầu (&6%jobname%&c) với cấp độ yêu cầu
-        (&6%joblevel%&c)'
+      NoJobReqForitem: '&cBạn không có nghề yêu cầu (&6%jobname%&c) với cấp độ yêu
+        cầu (&6%joblevel%&c)'
       NoPoints: '&cBạn không có đủ điểm'
       NoMoney: '&cBạn không có đủ tiền'
       NoTotalLevel: '&cTổng cấp độ nghề quá thấp (%totalLevel%)'
@@ -285,7 +289,8 @@ command:
       nojob: Không có nghề nào được lưu.
   give:
     help:
-      info: Đưa vật phẩm theo tên nghề và tên danh mục vật phẩm. Tên người chơi là tùy chọn
+      info: Đưa vật phẩm theo tên nghề và tên danh mục vật phẩm. Tên người chơi là
+        tùy chọn
       args: '[playername] [jobname] [items/limiteditems] [jobitemname]'
     output:
       notonline: '&4Người chơi với tên đó không trực tuyến!'
@@ -294,10 +299,10 @@ command:
     help:
       title: '&2*** &eNghề&2 ***'
       info: Hiển thị mỗi nghề được trả bao nhiều và cho cái gì.
-      penalty: '&eNghề này có phạt &c[penalty]% &evì có quá nhiều
-        người chơi làm việc trong đó.'
-      bonus: '&eNghề này có thưởng &2[bonus]% &evì không có đủ
-        người chơi làm việc trong đó.'
+      penalty: '&eNghề này có phạt &c[penalty]% &evì có quá nhiều người chơi làm việc
+        trong đó.'
+      bonus: '&eNghề này có thưởng &2[bonus]% &evì không có đủ người chơi làm việc
+        trong đó.'
       args: '[jobname] [action]'
       actions: '&eHành động hợp lệ là: &f%actions%'
       max: ' - &ecấp tối đa:&f '
@@ -430,16 +435,16 @@ command:
       info: Rời nghề đã chọn.
       args: '[oldplayerjob]'
     success: '&2Bạn đã rời nghề &7[jobname].'
-    confirmationNeed: '&cBạn có chắc chắn muốn rời khỏi nghề&e [jobname]&c? Gõ
-      lệnh lại trong vòng&6 [time] giây &cđể xác nhận!'
+    confirmationNeed: '&cBạn có chắc chắn muốn rời khỏi nghề&e [jobname]&c? Gõ lệnh
+      lại trong vòng&6 [time] giây &cđể xác nhận!'
   leaveall:
     help:
       info: Rời tất cả nghề của bạn.
     error:
       nojobs: Bạn không có nghề nào để rời!
     success: Bạn đã rời tất cả nghề.
-    confirmationNeed: '&cBạn có chắc chắn muốn rời khỏi tất cả nghề? Gõ lệnh
-      lại trong vòng&6 [time] giây &cđể xác nhận!'
+    confirmationNeed: '&cBạn có chắc chắn muốn rời khỏi tất cả nghề? Gõ lệnh lại trong
+      vòng&6 [time] giây &cđể xác nhận!'
   explored:
     help:
       info: Kiểm tra ai đã ghé thăm chunk này
@@ -569,7 +574,8 @@ command:
     help:
       info: Chỉnh sửa khu vực bị hạn chế.
       args: add/remove/info/list
-      addUsage: '&eCách sử dụng: &6/Jobs area add [areaName/wg:worldGuardAreaName] [bonus]'
+      addUsage: '&eCách sử dụng: &6/Jobs area add [areaName/wg:worldGuardAreaName]
+        [bonus]'
       removeUsage: '&eCách sử dụng: &6/Jobs area remove [areaName]'
     output:
       addedNew: '&eĐã thêm khu vực hạn chế mới với &6%bonus% &ethưởng'
@@ -644,8 +650,8 @@ command:
     error:
       nojob: '&cNgười chơi này phải gia nhập một nghề trước.'
     output:
-      target: '&eCấp độ của bạn đã được thay đổi cho %jobname% &evà bây giờ bạn ở &6%level%cấp
-        &evà với &6%exp%exp.'
+      target: '&eCấp độ của bạn đã được thay đổi cho %jobname% &evà bây giờ bạn ở
+        &6%level%cấp &evà với &6%exp%exp.'
   demote:
     help:
       info: Giáng cấp người chơi X cấp trong một nghề.
